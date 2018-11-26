@@ -11,21 +11,75 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
 
+      <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+
     <style type="text/css">
       .wrapper {
           display: flex;
-          align-items: stretch;
+          flex-direction: row;
+          min-height: 100vh;
       }
 
       #sidebar {
-          min-width: 250px;
-          max-width: 250px;
-          background-color: red;
-          min-height: 100vh;
+          background-color: #ae1111;
+          flex-basis: auto;
       }
 
       #sidebar.active {
           margin-left: -250px;
+      }
+
+      #content{
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+			.tab{
+        padding: 10px;
+        height: 70px;
+      }
+
+      .icon-wrapper{
+        background: black;
+        z-index: 1;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+			.icon{
+        width: 25px;
+      }
+
+      .icon-background{
+        position: relative;
+        background: white;
+        transform: translate(-10%,-90%);
+        height: 50px;
+        width: 50px;
+      }
+
+      #title-wrapper{
+        text-align: right;
+        width: 30%;
+        padding: 20px;
+      }
+
+      #title-wrapper p{
+        font-family: 'Bevan',cursive;
+        font-size: 50px;
+        line-height: 50px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      #logo{
+        width: 85px;
       }
     </style>
   </head>
@@ -33,10 +87,43 @@
   	<div class="wrapper">
   		<!-- Sidebar -->
     	<nav id="sidebar">
+        <div class="tab">
+          <div class="icon-wrapper">
+            <a href="#">
+              <img src="images/home.png" alt="home" class="icon">
+            </a>
+          </div>
+          <div class="icon-background"></div>
+        </div>
+        <div class="tab">
+          <div class="icon-wrapper">
+              <a href="#">
+                <img src="images/calendar.png" alt="calendar" class="icon">
+              </a>
+            </div>
+          <div class="icon-background"></div>
+        </div>
+        <div class="tab">
+            <div class="icon-wrapper">
+                <a href="#">
+                  <img src="images/about.png" alt="about" class="icon">
+                </a>
+            </div>
+            <div class="icon-background"></div>
+        </div>
     	</nav>
 
     	<!-- Page Content -->
     	<div id="content">
+        <div id="title-wrapper">
+          <img id="logo" src="images/ssa logo.png" alt="logo">
+          <p>we are the<br>
+            <span style="color: red">
+              symphonic<br>
+              student<br>
+              association</span>
+          </p>
+        </div>
     	</div>
     </div>
     <!-- jQuery -->
