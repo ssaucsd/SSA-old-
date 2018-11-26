@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
-.subscribe {
-  font-family: 'Overpass Mono', monospace;
+.email {
+  padding-left: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.email {
+.subscribe {
+  font-family: 'Overpass Mono', monospace;
+  width: 300px;
+}
+
+.mailicon {
+  width: 55px;
   background-color: black;
+}
+
+.facebook {
+  padding-left: 150px;
+  padding-right: 30px;
+}
+
+.youtube {
+  padding-top: 5px;
 }
