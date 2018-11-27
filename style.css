@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
 .email {
+  height: 45px;
   padding-left: 150px;
   display: inline-grid; 
   grid-template-columns: 1fr 1fr;
   border: none;
+}
+
+.submit {
+  height: 45px;
+  width: 58px;
+  border: 3px solid black;
+  border-left: 0px;
 }
 
 .subscribe {
@@ -24,9 +32,10 @@ input {
 }
 
 .mailicon {
-  width: 55px;
+  height: 39px;
+  width: 53px;
   background-color: #ae1111;
-  border: 3px solid black;
+  border: 2px solid white;
   border-left: 0px;
   text-align: center;
 }
