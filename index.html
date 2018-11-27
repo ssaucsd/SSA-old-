@@ -11,119 +11,57 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
 
-		<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
-
     <style type="text/css">
-      .wrapper {
-          display: flex;
-          flex-direction: row;
-          min-height: 100vh;
-      }
+			body {
+				background-image: url('images/symphony.jpg');
+				background-size: cover;
+			}
+			#navbar {
+				background-color: rgba(174, 17, 17, 0.7);
+			}
 
-      #sidebar {
-          background-color: #ae1111;
-          flex-basis: auto;
-      }
-
-      #sidebar.active {
-          margin-left: -250px;
-      }
-
-      #content{
-        width: 100%;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-
-			.tab{
-        padding: 10px;
-        height: 70px;
-      }
-
-      .icon-wrapper{
-        background: black;
-        z-index: 1;
-        position: relative;
-        height: 50px;
-        width: 50px;
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-			.icon{
-        width: 25px;
-      }
-
-      .icon-background{
-        position: relative;
-        background: white;
-        transform: translate(-10%,-90%);
-        height: 50px;
-        width: 50px;
-      }
-
-      #title-wrapper{
-        text-align: right;
-        width: 30%;
-        padding: 20px;
-      }
-
-      #title-wrapper p{
-        font-family: 'Bevan',cursive;
-        font-size: 50px;
-        line-height: 50px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-      }
-      #logo{
-        width: 85px;
-      }
+			#navbar a {
+				color: white;
+				font-weight: bold;
+			}
     </style>
   </head>
   <body>
   	<div class="wrapper">
-  		<!-- Sidebar -->
-    	<nav id="sidebar">
-        <div class="tab">
-          <a href="#">
-						<div class="icon-wrapper">
-							<img src="images/home.png" alt="home" class="icon">
-						</div>
-					</a>
-					<div class="icon-background"></div>
-        </div>
-        <div class="tab">
-          <a href="#">
-						<div class="icon-wrapper">
-							<img src="images/calendar.png" alt="calendar" class="icon">
-						</div>
-					</a>
-					<div class="icon-background"></div>
-        </div>
-        <div class="tab">
-          <a href="#">
-						<div class="icon-wrapper">
-							<img src="images/about.png" alt="about" class="icon">
-						</div>
-					</a>
-					<div class="icon-background"></div>
-        </div>
-    	</nav>
+  		<!-- Navbar -->
+			<nav id="navbar" class="navbar fixed-top">
+				<ul class="navbar-nav container-fluid d-flex flex-row
+									 justify-content-center text-center">
+					<li class="nav-item flex-fill">
+						<a class="nav-link" href="#">
+							Home
+						</a>
+					</li>
+					<li class="nav-item flex-fill">
+						<a class="nav-link" href="#">
+							About
+						</a>
+					</li>
+					<li class="nav-item flex-fill">
+						<a class="nav-link" href="#">
+							Calendar
+						</a>
+					</li>
+					<li class="nav-item flex-fill">
+						<a class="nav-link" href="#">
+							Collabs
+						</a>
+					</li>
+					<li class="nav-item flex-fill">
+						<a class="nav-link" href="#">
+							Support
+						</a>
+					</li>
+				</ul>
+		  </nav>
 
     	<!-- Page Content -->
     	<div id="content">
-        <div id="title-wrapper">
-          <img id="logo" src="images/ssa logo.png" alt="logo">
-          <p>we are the<br>
-            <span style="color: red">
-              symphonic<br>
-              student<br>
-              association</span>
-          </p>
-        </div>
     	</div>
     </div>
     <!-- jQuery -->
