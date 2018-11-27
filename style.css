@@ -2,18 +2,25 @@
 
 .email {
   padding-left: 150px;
-  display: grid;
+  display: inline-grid; 
   grid-template-columns: 1fr 1fr;
 }
 
 .subscribe {
   font-family: 'Overpass Mono', monospace;
   width: 300px;
+  border: 5px solid black;
+  border-top: 0px;
+}
+
+.email:focus {
+  outline: none;
 }
 
 .mailicon {
   width: 55px;
   background-color: black;
+  border: 5px solid black;
 }
 
 .facebook {
