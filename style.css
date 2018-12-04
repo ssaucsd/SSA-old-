@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 .email {
   height: 45px;
@@ -9,18 +9,27 @@
 }
 
 .submit {
-  height: 45px;
-  width: 58px;
-  border: 3px solid black;
-  border-left: 0px;
+  padding-left: 10px;
+  margin-top: -5px;
 }
 
 .subscribe {
-  font-family: 'Overpass Mono', monospace;
+  font-family: 'PT Sans', sans-serif;
   font-color: black;
-  width: 300px;
-  border: 3px solid black;
+  width: 265px;
+  height: 35px;
+  border: 3px solid white;
   border-right: 0px;
+  border-top: 0px;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type="text"] {
+  background:transparent;
+  color: white;
 }
 
 textarea:focus, input:focus {
@@ -32,12 +41,13 @@ input {
 }
 
 .mailicon {
-  height: 39px;
-  width: 53px;
-  background-color: #ae1111;
-  border: 2px solid white;
-  border-left: 0px;
+  height: 40px;
+  width: 40px;
+  border: 3px solid white;
   text-align: center;
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .facebook {
