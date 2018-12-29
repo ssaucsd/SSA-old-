@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+form {
+  text-align: center;
+}
+
 .email {
   height: 45px;
-  padding-left: 150px;
+  padding-left: 250px;
   display: inline-grid; 
   grid-template-columns: 1fr 1fr;
   border: none;
@@ -51,10 +55,14 @@ input {
 }
 
 .facebook {
-  padding-left: 150px;
-  padding-right: 30px;
+  display: block;
+  margin-left: auto;
+  padding-right: 20px;  
+  margin-top: 20px;
 }
 
 .youtube {
-  padding-top: 5px;
+  display: block;
+  margin-right: auto;  
+  margin-top: 20px;
 }
