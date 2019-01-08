@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
-=======
+
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -37,20 +36,12 @@
   color: white;
   font-size: 70px;
 }
->>>>>>> jason-bryan
 
 form {
   text-align: center;
 }
 
 .email {
-<<<<<<< HEAD
-  height: 45px;
-  padding-left: 250px;
-  display: inline-grid; 
-  grid-template-columns: 1fr 1fr;
-=======
->>>>>>> jason-bryan
   border: none;
 }
 
@@ -99,20 +90,12 @@ input {
 .facebook {
   display: block;
   margin-left: auto;
-<<<<<<< HEAD
-  padding-right: 20px;  
-=======
   padding-right: 20px;
->>>>>>> jason-bryan
   margin-top: 20px;
 }
 
 .youtube {
   display: block;
-<<<<<<< HEAD
-  margin-right: auto;  
-=======
   margin-right: auto;
->>>>>>> jason-bryan
   margin-top: 20px;
 }
