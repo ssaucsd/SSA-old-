@@ -1,0 +1,93 @@
+body{
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#navbar a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#content {
+  transform: translateY(-50vh);
+}
+
+form {
+  text-align: center;
+}
+
+.email {
+  border: none;
+}
+
+.submit {
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+.subscribe {
+  font-family: 'PT Sans', sans-serif;
+  font-color: black;
+  width: 265px;
+  height: 35px;
+  border: 3px solid white;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type="text"] {
+  background:transparent;
+  color: white;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+input {
+  border: 0px none;
+}
+
+.mailicon {
+  height: 40px;
+  width: 40px;
+  border: 3px solid white;
+  text-align: center;
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.facebook {
+  display: block;
+  margin-left: auto;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.youtube {
+  display: block;
+  margin-right: auto;
+  margin-top: 20px;
+}
