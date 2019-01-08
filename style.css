@@ -1,14 +1,56 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+=======
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#wrapper {
+  height: 100vh;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#navbar a {
+  color: white;
+  text-transform: uppercase;
+}
+
+#content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#title {
+  color: white;
+  font-size: 70px;
+}
+>>>>>>> jason-bryan
 
 form {
   text-align: center;
 }
 
 .email {
+<<<<<<< HEAD
   height: 45px;
   padding-left: 250px;
   display: inline-grid; 
   grid-template-columns: 1fr 1fr;
+=======
+>>>>>>> jason-bryan
   border: none;
 }
 
@@ -57,12 +99,20 @@ input {
 .facebook {
   display: block;
   margin-left: auto;
+<<<<<<< HEAD
   padding-right: 20px;  
+=======
+  padding-right: 20px;
+>>>>>>> jason-bryan
   margin-top: 20px;
 }
 
 .youtube {
   display: block;
+<<<<<<< HEAD
   margin-right: auto;  
+=======
+  margin-right: auto;
+>>>>>>> jason-bryan
   margin-top: 20px;
 }
