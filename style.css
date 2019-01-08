@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 
 .carousel-item {
   height: 100vh;
@@ -35,10 +36,40 @@
 #title {
   color: white;
   font-size: 70px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 form {
   text-align: center;
+}
+
+.subscribe input {
+  font-family: 'Overpass Mono', sans-serif;
+  width: 100%;
+  padding-left: 15px;
+  color: white !important;
+}
+
+.subscribe input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.subscribe input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+.subscribe input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+.subscribe input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+.subscribe input::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+}
+
+.subscribe input::placeholder { /* Most modern browsers support this now. */
+   color: white;
 }
 
 .email {
