@@ -8,6 +8,8 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  filter: grayscale(100%) brightness(60%) contrast(140%);
   background-size: cover;
 }
 
@@ -17,10 +19,6 @@
 
 #wrapper {
   height: 100vh;
-}
-
-#navbar {
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #navbar a {
@@ -134,3 +132,4 @@ input {
   margin-right: auto;
   margin-top: 20px;
 }
+
