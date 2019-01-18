@@ -17,10 +17,10 @@ $js_src = $scripts->getAttribute('src');
 $scripts->setAttribute('src', $google_domain . $js_src);
 
 // Create a link to a new CSS file called custom_calendar.css
-
-$element = $dom->createElement('style');
+$element = $dom->createElement('link');
 $element->setAttribute('type', 'text/css');
-$element->setAttribute('src', 'calendar.css');
+$element->setAttribute('rel', 'stylesheet');
+$element->setAttribute('href', 'calendar.css');
 
 // Append this link at the end of the element
 $head = $dom->getElementsByTagName('head')->item(0);
