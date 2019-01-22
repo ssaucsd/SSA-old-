@@ -2,3 +2,54 @@
   color: black;
   text-transform: uppercase;
 }
+
+#title {
+  color: #ae1111;
+  font-size: 70px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: right;
+}
+
+#top {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	padding-top: 150px;
+}
+
+#header {
+	padding-top: 65px;
+	padding-left: 100px;
+}
+
+#subtitle {
+  color: black;
+  font-size: 25px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  text-align: right;
+}
+
+#subtitletwo {
+  color: black;
+  font-size: 25px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  text-align: center;
+  line-height: 1em;
+  text-align: right;
+}
+
+#underline {
+	border-bottom: 4px solid #ae1111;
+  	padding-bottom: 5px;
+  	width: 100px;
+}
+
+#info {
+	color: #ae1111;
+	font-size: 30px;
+	width: 85%;
+	padding-left: 75px;
+}
