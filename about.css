@@ -4,41 +4,48 @@
 }
 
 #title {
-  color: #ae1111;
+  color: #9e0039;
   font-size: 70px;
   font-family: 'PT Sans', sans-serif;
   line-height: 1em;
+  position: absolute;
 }
 
 #top {
 	display: grid;
-	grid-template-columns: 2fr 3fr;
+	grid-template-columns: 1fr 1fr;
 	padding-top: 150px;
 }
 
 #header {
+  background-image: url("symphony.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 	padding-top: 65px;
 	padding-left: 100px;
   text-align: right;
 }
 
 #subtitle {
-  color: black;
+  color: white;
   font-size: 25px;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1em;
+  position: absolute;
 }
 
 #subtitletwo {
-  color: black;
+  color: white;
   font-size: 25px;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
   line-height: 1em;
-  border-bottom: 4px solid #ae1111;
+  border-bottom: 4px solid #9e0039;
   padding-bottom: 5px;
+  position: absolute;
 }
 
 /*#underline {
@@ -49,8 +56,9 @@
 }*/
 
 #info {
-	color: #ae1111;
+  background-color: #9e0039;
+	color: white;
 	font-size: 30px;
 	width: 85%;
-	padding-left: 75px;
+	padding-left: 50px;
 }
