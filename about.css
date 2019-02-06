@@ -65,14 +65,14 @@ a {
   float: left;
   height: 500px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 #info {
   background-color: #9e0039;
   color: white;
-  width: 45%;
-  margin-left: 5%;
+  width: 49%;
+  margin-left: 1%;
   display: inline-block;
   height: 500px;
 
@@ -221,7 +221,7 @@ a {
 
 #titles{
   text-align: right;
-  width: 70%;
+  width: 78%;
   margin: auto;
 }
 
@@ -265,6 +265,7 @@ a {
 
   #titles{
     text-align: center;
+    width: 65%;
   }
 
   #title{
