@@ -21,9 +21,55 @@
   height: 100vh;
 }
 
-#navbar a {
+
+#nav-list ul { 
+  margin: 0px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+#nav-list li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+#nav-list a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#nav-list a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#nav-list a { 
+  color: white; 
+  text-decoration: none;
+} 
+
+#links{
+  color: white;
+  text-decoration: none;
 }
 
 #content {
