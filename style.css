@@ -76,8 +76,8 @@ a {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+  margin: auto;
   width: 100%;
 }
 
@@ -94,7 +94,7 @@ form {
 .subscribe input {
   font-family: 'Overpass Mono', sans-serif;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0px;
   color: white !important;
 }
 
@@ -125,7 +125,6 @@ form {
 }
 
 .submit {
-  padding-left: 10px;
   margin-top: -5px;
 }
 
@@ -141,6 +140,7 @@ form {
 
 ::placeholder {
   color: white;
+  font-size: 15px;
 }
 
 input[type="text"] {
@@ -161,7 +161,7 @@ input {
   width: 40px;
   border: 3px solid white;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 20px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -179,3 +179,101 @@ input {
   margin-top: 20px;
 }
 
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0,0,0);
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#phone-list{
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  
+  #title{
+    font-size: 25px;
+    line-height: 35px;
+    text-transform: uppercase;
+  }
+
+  #content {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    margin: auto;
+    width: 100%;
+    transform: translate(0,0);
+  }
+
+  #title-area{
+    width: 160px;
+    margin: auto;
+  } 
+
+  #social-media{
+    display: none;
+  }
+
+  #nav-list{
+    display: none !important;
+  }
+
+
+  #navbarTogglerDemo03{
+    width: 100%;
+    height: 100vh;
+    background: black;
+  }
+
+  #navbar{
+    padding:0;
+  }
+
+  #phone-list{
+    visibility: visible;
+    display: default;
+    padding: 0;
+    margin-top: 40%;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    color: white;
+    height: auto;
+  }
+
+  #phone-list li{
+    width: 100%;
+  }
+
+  #underline-div{
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:0;
+    height: 1px;
+    opacity: 0.7;
+  }
+
+  #menu-button{
+    padding-top: 20px;
+  }
+
+  #email-input{
+    padding-top: 26%;
+  }
+
+  #mailbox{
+    width: 250px;
+  }
+
+  .mailicon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    padding-top: 5px;
+  }
+}
