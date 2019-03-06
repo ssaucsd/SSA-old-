@@ -54,7 +54,7 @@ a {
 	width: 100%;
   margin-top: 85px;
   height: 500px;
-	background-image: url("support.jpg");
+	background-image: url("../image/support.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
