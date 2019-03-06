@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
+@font-face {
+  font-family: Avenir;
+  src: url(AvenirLTStd-Book.otf);
+}
+
 #nav-list ul { 
   margin: 0px auto 0; 
   padding: 0; 
@@ -91,12 +96,15 @@ a {
 }
 
 #summary {
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 50px;
+  font-size: 23px;
+  margin-top: 20px;
+  font-family: Avenir;
 }
 
 #contribute {
   padding-left: 70px;
+  margin-top: 50px;
 }
 
 #howto {
@@ -107,11 +115,14 @@ a {
 }
 
 #checks {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 23px;
+  line-height: 50px;
+  font-family: Avenir;
 }
 
 #mail {
-  font-size: 20px;
-  line-height: 30px;
+  margin-top: 25px;
+  font-size: 23px;
+  line-height: 40px;
+  font-family: Avenir;
 }
