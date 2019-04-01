@@ -50,36 +50,181 @@ $events = $results->getItems();
 <!DOCTYPE html>
 <html>
     <head>
-    </head>
+		<title>Calendar</title>
+		<link rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./events.css">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	
     <body>
-	<?php
-	if (empty($events)) {
-	    print "no upcoming events found.\n";
-	} else {
-	    foreach ($events as $event) {
-		$title = $event->getSummary();
-		$start = $event->start->dateTime;
-		$location = $event->getLocation();
+		<!-- Navigation -->
+		<div id="navbar">
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+				<span class="navbar-toggler-icon">
+					<i class="fa fa-navicon"></i>
+				</span>
+			</button>
+	
+			
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Home
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="./about.html">
+							About
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Calendar
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Collabs
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Support
+							</a>
+						</li>
+					</ul>
 
-		if (empty($start)) {
-		    $start = $event->start->date;
+						<ul id="phone-list">
+						<li>Home</li>
+						<li id="underline-div"><div></div></li>
+						<li>About</li>
+						<li id="underline-div"><div></div></li>
+						<li>Calendar</li>
+						<li id="underline-div"><div></div></li>
+						<li>Collabs</li>
+						<li id="underline-div"><div></div></li>
+						<li>Support</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<?php
+		if (empty($events)) {
+			//print "no upcoming events found.\n";
+		} else {
+			foreach ($events as $event) {
+			$title = $event->getSummary();
+			$start = $event->start->dateTime;
+			$location = $event->getLocation();
+
+			if (empty($start)) {
+				$start = $event->start->date;
+			}
+
+			$startarr = date_parse($start);
+			$month = $startarr["month"];
+			$monthobj = DateTime::createFromFormat("!m", $month);
+			$month = $monthobj->format("F");
+			$day = $startarr["day"];
+			$day = str_pad($day, 2, 0, STR_PAD_LEFT);
+			$hour = $startarr["hour"];
+			$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
+			$minute = $startarr["minute"];
+			$time = strval($hour) . ":" . strval($minute);
+			$time = date('g:i a', strtotime($time));
+
+			printf("%s %s (%s %s %s)<br>", $title, $location, $month, $day, $time);
+			}
 		}
+		?>
 
-		$startarr = date_parse($start);
-		$month = $startarr["month"];
-		$monthobj = DateTime::createFromFormat("!m", $month);
-		$month = $monthobj->format("F");
-		$day = $startarr["day"];
-		$day = str_pad($day, 2, 0, STR_PAD_LEFT);
-		$hour = $startarr["hour"];
-		$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
-		$minute = $startarr["minute"];
-		$time = strval($hour) . ":" . strval($minute);
-		$time = date('g:i a', strtotime($time));
+		<!-- Navigation -->
+		<div id="navbar">
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
+				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+				<span class="navbar-toggler-icon">
+					<i class="fa fa-navicon"></i>
+				</span>
+				</button>
 
-		printf("%s %s (%s %s %s)<br>", $title, $location, $month, $day, $time);
-	    }
-	}
-	?>
+			
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Home
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="./about.html">
+							About
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Calendar
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="./colabs.html">
+							Collabs
+							</a>
+						</li>
+						<li class="nav-item flex-fill">
+							<a class="nav-link" id="links" href="#">
+							Support
+							</a>
+						</li>
+					</ul>
+
+					<ul id="phone-list">
+					<li>Home</li>
+					<li id="underline-div"><div></div></li>
+					<li>About</li>
+					<li id="underline-div"><div></div></li>
+					<li>Calendar</li>
+					<li id="underline-div"><div></div></li>
+					<li>Collabs</li>
+					<li id="underline-div"><div></div></li>
+					<li>Support</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<div class='main'>
+			<div class='content-center'>
+				<div class="left"></div>
+				<div class="right">
+					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous">
+		</script>
+
+		<!-- Popper.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous">
+		</script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous">
+		</script>
     </body>
 </html>

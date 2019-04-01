@@ -1,6 +1,9 @@
 body {
-	background-image: url('https://assets.visitphilly.com/wp-content/uploads/2018/02/The-Philadelphia-Orchestra-Yannick-J.Griffin-VP-2200x1237.jpg');
 	color: white !important;
+	background: none !important;
+	border: 0;
+	-webkit-filter: none;
+    filter: none;
 }
 
 #calendarTabs1, #td-print-image-id, #td-print-text-id, 
