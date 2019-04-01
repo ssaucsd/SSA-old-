@@ -1,7 +1,6 @@
 <?php
-// TODO: FIX PRINTING URL ERROR
-
-$calendar="https://calendar.google.com/calendar/embed?src=gg5p3rbo7tuhpgr77rvol6gkj4%40group.calendar.google.com&ctz=America%2FLos_Angeles";
+$calendar_id = "ucsd.edu_43odjj6hkidg977ksrlio92v30@group.calendar.google.com";
+$calendar = "https://calendar.google.com/calendar/embed?src=".$calendar_id."&ctz=America%2FLos_Angeles";
 $url = parse_url($calendar);
 $google_domain = $url['scheme'].'://'.$url['host'];
 
@@ -16,15 +15,25 @@ $scripts = $dom->getElementsByTagName('script')->item(2);
 $js_src = $scripts->getAttribute('src');
 $scripts->setAttribute('src', $google_domain . $js_src);
 
-// Create a link to a new CSS file called custom_calendar.css
-$element = $dom->createElement('link');
-$element->setAttribute('type', 'text/css');
-$element->setAttribute('rel', 'stylesheet');
-$element->setAttribute('href', 'calendar.css');
+// Create a link to a new CSS file called calendar.css
+$css = $dom->createElement('link');
+$css->setAttribute('type', 'text/css');
+$css->setAttribute('rel', 'stylesheet');
+$css->setAttribute('href', 'calendar.css');
 
-// Append this link at the end of the element
+// Create a link to a new JS file called calendar.js
+$js = $dom->createElement('script');
+$js->setAttribute('type', 'text/javascript');
+$js->setAttribute('src', 'calendar.js');
+
+// Append CSS and JS links at the end of the head element
 $head = $dom->getElementsByTagName('head')->item(0);
-$head->appendChild($element);
+$head->appendChild($css);
+$head->appendChild($js);
+
+// Remove "SSA" text at top of page
+$title = $dom->getElementById('calendarTitle');
+$title->parentNode->removeChild($title);
 
 // Export the HTML
 echo $dom->saveHTML();
