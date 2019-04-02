@@ -201,6 +201,7 @@ $events = $results->getItems();
 		</div>
 		
 		<div class='main'>
+			<div class="background-img"></div>
 			<div class='content-center'>
 				<div class="left"></div>
 				<div class="right">

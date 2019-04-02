@@ -17,7 +17,7 @@ body {
 }
 
 .st-bg {
-	font-size: 30px;
+	font-size: 50px;
 	text-align: center;
 }
 
@@ -75,7 +75,7 @@ body {
 .date-top {
 	margin-left: 50px;
 	margin-right: 50px;
-	font-size: 280%;
+	font-size: 420% !important;
 	font-weight: normal !important;
 }
 
