@@ -1,0 +1,174 @@
+/* css for the navbar */
+#nav-list ul { 
+    margin: 0px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  #nav-list li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  #nav-list a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #nav-list a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+  #nav-list a { 
+    color: white; 
+    text-decoration: none;
+  } 
+  
+  #links{
+    color: white;
+    text-decoration: none;
+  }
+
+#phone-list{
+  display: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+@media screen and (max-width: 575px){
+  /*Here are the css for the collapsible navbar*/
+  #nav-list{
+    display: none !important;
+  }
+
+
+  #navbarTogglerDemo03{
+    width: 100%;
+    height: 100vh;
+  }
+
+  #navbar{
+    padding:0;
+  }
+
+  #phone-list{
+    visibility: visible;
+    display: default;
+    padding: 0;
+    margin-top: 40%;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    color: white;
+    height: auto;
+  }
+
+  #phone-list li{
+    width: 100%;
+  }
+
+  #underline-div{
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:0;
+    height: 1px;
+    opacity: 0.7;
+  }
+
+  #menu-button{
+    padding-top: 10px;
+  }
+
+  #title-area{
+    padding-top: 50px;
+  }
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.background-img{
+  position: absolute;
+  background-image: url('./images/support.jpg');
+  -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  filter: grayscale(100%) brightness(60%) contrast(140%);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.left{
+    width: 45%;
+    display: inline-block;
+    padding-left: 5%;
+}
+
+.right{
+    width: 54%;
+    display: inline-block;
+}
+
+.content-center{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr; /* Three columns, one three times as wide as the others */
+    grid-template-rows: 100%; /* Three rows, two with explicit widths */
+    grid-template-areas: "sidebar main footer";
+}
+
+.title{
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 90px;
+  color: white;
+
+  grid-area: sidebar;
+}
+
+.events{
+  grid-area: main;
+}
+
+#calendar{
+  width: 100%;
+  height: 400px;
+
+  grid-area: footer;
+}

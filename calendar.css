@@ -1,6 +1,9 @@
 body {
-	background-image: url('https://assets.visitphilly.com/wp-content/uploads/2018/02/The-Philadelphia-Orchestra-Yannick-J.Griffin-VP-2200x1237.jpg');
 	color: white !important;
+	background: none !important;
+	border: 0;
+	-webkit-filter: none;
+    filter: none;
 }
 
 #calendarTabs1, #td-print-image-id, #td-print-text-id, 
@@ -14,7 +17,7 @@ body {
 }
 
 .st-bg {
-	font-size: 30px;
+	font-size: 50px;
 	text-align: center;
 }
 
@@ -55,7 +58,10 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
+	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  	filter: grayscale(100%) brightness(60%) contrast(140%);
 	/*background-image: url();*/
+	transform: scale(1.5);
 }
 
 .navForward {
@@ -66,13 +72,16 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
+	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  	filter: grayscale(100%) brightness(60%) contrast(140%);
 	/*background-image: url();*/
+	transform: scale(1.5);
 }
 
 .date-top {
 	margin-left: 50px;
 	margin-right: 50px;
-	font-size: 280%;
+	font-size: 420% !important;
 	font-weight: normal !important;
 }
 
@@ -82,7 +91,7 @@ body {
 }
 
 .mv-dayname {
-	font-size: 152%;
+	font-size: 200%;
 	text-transform: uppercase;
 }
 
@@ -100,6 +109,7 @@ body {
 
 .st-dtitle {
 	visibility: hidden;
+	font-size: 150%;
 }
 
 .st-dtitle-nonmonth {
