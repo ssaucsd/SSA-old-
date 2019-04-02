@@ -148,9 +148,9 @@
     z-index: 10;
 
     display: grid;
-  grid-template-columns: 1fr 4fr 5fr; /* Three columns, one three times as wide as the others */
-  grid-template-rows: 100%; /* Three rows, two with explicit widths */
-  grid-template-areas: "sidebar main footer";
+    grid-template-columns: 1fr 4fr 5fr; /* Three columns, one three times as wide as the others */
+    grid-template-rows: 100%; /* Three rows, two with explicit widths */
+    grid-template-areas: "sidebar main footer";
 }
 
 .title{
