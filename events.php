@@ -74,12 +74,12 @@ $events = $results->getItems();
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
+							<a class="nav-link" id="links" href="./index.html">
 							Home
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./about.html">
+							<a class="nav-link" id="links" href="./about/index.html">
 							About
 							</a>
 						</li>
@@ -89,12 +89,12 @@ $events = $results->getItems();
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
+							<a class="nav-link" id="links" href="./collaborations/index.html">
 							Collabs
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
+							<a class="nav-link" id="links" href="./support/index.html">
 							Support
 							</a>
 						</li>
@@ -204,7 +204,52 @@ $events = $results->getItems();
 			<div class="background-img"></div>
 			<div class='content-center'>
 					<div class="title">EVENTS |</div>
-					<div class="events"></div>
+					<div class="events">
+						<div style="font-size: 60px; text-align: center; font-weight: 600">
+							09
+							<p id="month">SEP</p>
+						</div>
+						<div style="padding-top: 25px; text-align: right">
+							<div>Annual Fall Concert</div>
+							<div>Music Center 8:30pm</div>
+						</div>
+						<div class="event-display" id="event1">
+							<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end">
+								<div style="display: inline-block; font-size: 30px">JULY</div>
+								<div style="display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600">03</div>
+							</div>
+							<div>SSA Winter Performance</div>
+							<div>7:00 pm at Price Center</div>
+							<div>Ballroom</div>
+						</div>
+						<div class="event-display" id="event2">
+							<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end">
+								<div style="display: inline-block; font-size: 30px">JULY</div>
+								<div style="display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600">03</div>
+							</div>
+							<div>SSA Winter Performance</div>
+							<div>7:00 pm at Price Center</div>
+							<div>Ballroom</div>
+						</div>
+						<div class="event-display" id="event3">
+							<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end">
+								<div style="display: inline-block; font-size: 30px">JULY</div>
+								<div style="display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600">03</div>
+							</div>
+							<div>SSA Winter Performance</div>
+							<div>7:00 pm at Price Center</div>
+							<div>Ballroom</div>
+						</div>
+						<div class="event-display" id="event4">
+							<div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end">
+								<div style="display: inline-block; font-size: 30px">JULY</div>
+								<div style="display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600">03</div>
+							</div>
+							<div>SSA Winter Performance</div>
+							<div>7:00 pm at Price Center</div>
+							<div>Ballroom</div>
+						</div>
+					</div>
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
 			</div>
 		</div>
