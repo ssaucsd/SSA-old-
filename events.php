@@ -203,10 +203,9 @@ $events = $results->getItems();
 		<div class='main'>
 			<div class="background-img"></div>
 			<div class='content-center'>
-				<div class="left"></div>
-				<div class="right">
+					<div class="title">EVENTS |</div>
+					<div class="events"></div>
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
-				</div>
 			</div>
 		</div>
 

@@ -58,7 +58,10 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
+	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  	filter: grayscale(100%) brightness(60%) contrast(140%);
 	/*background-image: url();*/
+	transform: scale(1.5);
 }
 
 .navForward {
@@ -69,7 +72,10 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
+	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
+  	filter: grayscale(100%) brightness(60%) contrast(140%);
 	/*background-image: url();*/
+	transform: scale(1.5);
 }
 
 .date-top {
@@ -85,7 +91,7 @@ body {
 }
 
 .mv-dayname {
-	font-size: 152%;
+	font-size: 200%;
 	text-transform: uppercase;
 }
 
@@ -103,6 +109,7 @@ body {
 
 .st-dtitle {
 	visibility: hidden;
+	font-size: 150%;
 }
 
 .st-dtitle-nonmonth {
