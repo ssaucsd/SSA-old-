@@ -50,7 +50,7 @@ $events = $results->getItems();
 <!DOCTYPE html>
 <html>
     <head>
-		<title>Calendar</title>
+		<title>SSA: Calendar</title>
 		<link rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -159,12 +159,12 @@ $events = $results->getItems();
 
 					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
+							<a class="nav-link" id="links" href="./index.html">
 							Home
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./about.html">
+							<a class="nav-link" id="links" href="./about/index.html">
 							About
 							</a>
 						</li>
@@ -174,12 +174,12 @@ $events = $results->getItems();
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./colabs.html">
+							<a class="nav-link" id="links" href="./collaborations/index.html">
 							Collabs
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
+							<a class="nav-link" id="links" href="./support/index.html">
 							Support
 							</a>
 						</li>
