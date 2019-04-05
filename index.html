@@ -11,6 +11,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script data-require="jquery" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
   <style>
   </style>
@@ -77,19 +78,39 @@
       <!-- Page content -->
       <div id="content">
         <p id="title">Symphonic Student Association</p>
-        <form>
+        <form name="submit-to-google-sheet">
           <div class="email container-fluid d-flex flex-row justify-content-center text-center">
               <div class="subscribe" style="width: 300px;">
-                  <input type="text" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
+                  <input id="email" name="email" type="text" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
               </div>
               <div class="submit">
                 <div class="mailicon">
-                  <input type="image" src="icons/emailIcon.png"
+                  <input id="submit-button" type="image" src="icons/emailIcon.png"
                   style="width:25px;height:15px;">
                 </div>
               </div>
           </div>
         </form>
+
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbwiDBrLb9fFEbyp0pxx3cKP8oAJzGTKbHaGxyhdtGvqX_OX6Gs/exec'
+          const form = document.forms['submit-to-google-sheet']
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          });
+
+          form.addEventListener('submit', reset(), true);
+
+
+          function reset() {
+            document.getElementById("email").reset();
+          }
+        </script>
+
         <div class="social media">
           <div class="facebook">
             <a href="https://www.facebook.com/ssaucsd/" target="_blank">
