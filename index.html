@@ -12,40 +12,63 @@
       crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script data-require="jquery" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
   </head>
   <style>
   </style>
   <body>
     <!-- Navigation -->
-		<div id="navbar">
-      <nav class="navbar fixed-top">
-          <ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
-              <li class="nav-item flex-fill">
-                  <a class="nav-link" id="links" href="#">
-                  Home
-                  </a>
-              </li>
-              <li class="nav-item flex-fill">
-                  <a class="nav-link" id="links" href="./about.html">
-                  About
-                  </a>
-              </li>
-              <li class="nav-item flex-fill">
-                  <a class="nav-link" id="links" href="#">
-                  Calendar
-                  </a>
-              </li>
-              <li class="nav-item flex-fill">
-                  <a class="nav-link" id="links" href="#">
-                  Collabs
-                  </a>
-              </li>
-              <li class="nav-item flex-fill">
-                  <a class="nav-link" id="links" href="#">
-                  Support
-                  </a>
-              </li>
-          </ul>
+    <div id="navbar">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+          <span class="navbar-toggler-icon">
+              <i class="fa fa-navicon"></i>
+          </span>
+        </button>
+
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+            <ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+                <li class="nav-item flex-fill">
+                    <a class="nav-link" id="links" href="#">
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item flex-fill">
+                    <a class="nav-link" id="links" href="./about/index.html">
+                    About
+                    </a>
+                </li>
+                <li class="nav-item flex-fill">
+                    <a class="nav-link" id="links" href="./events.php">
+                    Calendar
+                    </a>
+                </li>
+                <li class="nav-item flex-fill">
+                    <a class="nav-link" id="links" href="./collaborations/index.html">
+                    Collabs
+                    </a>
+                </li>
+                <li class="nav-item flex-fill">
+                    <a class="nav-link" id="links" href="./support/index.html">
+                    Support
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="phone-list">
+              <li>Home</li>
+              <li id="underline-div"><div></div></li>
+              <li>About</li>
+              <li id="underline-div"><div></div></li>
+              <li>Calendar</li>
+              <li id="underline-div"><div></div></li>
+              <li>Collabs</li>
+              <li id="underline-div"><div></div></li>
+              <li>Support</li>
+            </ul>
+        </div>
       </nav>
     </div>
 
@@ -77,7 +100,9 @@
 
       <!-- Page content -->
       <div id="content">
-        <p id="title">Symphonic Student Association</p>
+        <div id="title-area">
+          <p id="title">Symphonic Student Association</p>
+        </div>
         <form name="submit-to-google-sheet">
           <div class="email container-fluid d-flex flex-row justify-content-center text-center">
               <div class="subscribe" style="width: 300px;">
@@ -111,15 +136,15 @@
           }
         </script>
 
-        <div class="social media">
+        <div id="social-media">
           <div class="facebook">
-            <a href="https://www.facebook.com/ssaucsd/" target="_blank">
+            <a href="https://www.facebook.com/ssaucsd/">
             <img src="icons/facebook.png" alt="Check out our Facebook!" width="30"
             height="30"></a>
           </div>
           <div class="youtube">
-            <a href="https://www.youtube.com/channel/UC2G6W8l7B_9SSEPRs4kEx1Q" target="_blank">
-              <img src="icons/youtube.png" alt="Check out our YouTube!" width="30"
+            <a href="#">
+              <img src="icons/youtube.png" alt="Check out our YouTube channel!" width="30"
               height="30">
             </a>
           </div>
