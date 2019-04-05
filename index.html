@@ -118,34 +118,28 @@
         </form>
 
         <script>
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbwiDBrLb9fFEbyp0pxx3cKP8oAJzGTKbHaGxyhdtGvqX_OX6Gs/exec'
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ0A_B1_Z2vrLnG4nxj3O8GnxQFlPeooVRkRoNuOaJmyleyNqj/exec'
           const form = document.forms['submit-to-google-sheet']
 
           form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-              .then(response => console.log('Success!', response))
-              .catch(error => console.error('Error!', error.message))
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)});
+            removeInput()
           });
 
-          form.addEventListener('submit', reset(), true);
-
-
-          function reset() {
-            document.getElementById("email").reset();
+          function removeInput() {
+            document.getElementById("email").value = "";
           }
         </script>
 
-        <div id="social-media">
+        <div class="social media" id="social-media">
           <div class="facebook">
             <a href="https://www.facebook.com/ssaucsd/">
-            <img src="icons/facebook.png" alt="Check out our Facebook!" width="30"
-            height="30"></a>
+            <img src="icons/facebook.png" alt="Check out our Facebook!" width="30" height="30"></a>
           </div>
           <div class="youtube">
             <a href="#">
-              <img src="icons/youtube.png" alt="Check out our YouTube channel!" width="30"
-              height="30">
+              <img src="icons/youtube.png" alt="Check out our YouTube channel!" width="30" height="30">
             </a>
           </div>
         </div>
