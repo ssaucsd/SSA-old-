@@ -81,6 +81,10 @@ a {
   padding-right: 5%;
 }
 
+#info p {
+  font-size: 0.85em;
+}
+
 #subtitle {
   color: white;
   font-size: 35px;
