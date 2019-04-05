@@ -11,11 +11,9 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <script data-require="jquery" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
   </head>
-  <style>
-  </style>
+  
   <body>
     <!-- Navigation -->
     <div id="navbar">
@@ -117,21 +115,6 @@
           </div>
         </form>
 
-        <script>
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbzQ0A_B1_Z2vrLnG4nxj3O8GnxQFlPeooVRkRoNuOaJmyleyNqj/exec'
-          const form = document.forms['submit-to-google-sheet']
-
-          form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)});
-            removeInput()
-          });
-
-          function removeInput() {
-            document.getElementById("email").value = "";
-          }
-        </script>
-
         <div class="social media" id="social-media">
           <div class="facebook">
             <a href="https://www.facebook.com/ssaucsd/">
@@ -145,6 +128,9 @@
         </div>
       </div>
     </div>
+
+    <!-- script.js -->
+    <script src="script.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
