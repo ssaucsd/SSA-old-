@@ -1,4 +1,4 @@
-body {
+ody {
 	color: white !important;
 	background: none !important;
 	border: 0;
@@ -51,6 +51,10 @@ body {
 	height: 100%;
 }
 
+.navbutton {
+	padding: 0px !important;
+}
+
 .navBack {
 	margin: 0;
 	position: absolute;
@@ -58,10 +62,7 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
-	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
-  	filter: grayscale(100%) brightness(60%) contrast(140%);
-	/*background-image: url();*/
-	transform: scale(1.5);
+	background-image: url(images/left-arrow.png);
 }
 
 .navForward {
@@ -72,10 +73,7 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
-	-webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
-  	filter: grayscale(100%) brightness(60%) contrast(140%);
-	/*background-image: url();*/
-	transform: scale(1.5);
+	background-image: url(images/right-arrow.png);
 }
 
 .date-top {
@@ -105,6 +103,9 @@ body {
 
 .te {
 	display: none;
+	transform: translate(0%, -55%);
+	-moz-transform: translate(0%, -55%);
+	-webkit-transform: translate(0%, -55%);
 }
 
 .st-dtitle {
@@ -129,5 +130,11 @@ body {
 }
 
 .loading {
-	display: none !important;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 50%;
+	right: 50% !important;
+	transform: translate(50%, -50%);
+	-moz-transform: translate(50%, -50%);
+	-webkit-transform: translate(50%, -50%);
 }

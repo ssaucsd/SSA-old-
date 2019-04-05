@@ -66,6 +66,8 @@ window.onload = function() {
 	};
 
 	repeat();
+
+	document.getElementsByClassName("loading")[0].style.visibility = "hidden";
 };
 
 window.onresize = repeat;
