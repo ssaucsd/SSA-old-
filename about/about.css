@@ -107,6 +107,10 @@ a {
   display: block;
 }
 
+#content{
+  width: 91%;
+}
+
 .left{
   width: 45%;
   display: inline-block;
