@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Avenir;
-  src: url(AvenirLTStd-Book.otf);
+  src: url(./fonts/AvenirLTStd-Book.otf);
 }
 
 #nav-list ul { 
@@ -60,7 +60,7 @@ a {
   margin-top: 85px;
   height: 500px;
 	background-image: url(../images/support.jpg);
-	background-position: center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
   display: inline-block;
