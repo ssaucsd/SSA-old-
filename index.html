@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
   </head>
-  <style>
-  </style>
+  
   <body>
     <!-- Navigation -->
     <div id="navbar">
@@ -80,11 +79,11 @@
           <li data-target="#slideshow" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active" style="background-image: url('images/symphony.jpg')">
+          <div class="carousel-item active" style="background-image: url('images/homepage_image1.jpg')">
           </div>
-          <div class="carousel-item" style="background-image: url('images/symphony-2.jpg')">
+          <div class="carousel-item" style="background-image: url('images/homepage_image2.jpg')">
           </div>
-          <div class="carousel-item" style="background-image: url('images/symphony-3.jpg')">
+          <div class="carousel-item" style="background-image: url('images/homepage_image3.jpg')">
           </div>
         </div>
         <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
@@ -102,34 +101,36 @@
         <div id="title-area">
           <p id="title">Symphonic Student Association</p>
         </div>
-        <form id="email-input">
-          <div class="email container-fluid d-flex flex-row justify-content-center text-center" id="mailbox">
+        <form name="submit-to-google-sheet">
+          <div class="email container-fluid d-flex flex-row justify-content-center text-center">
               <div class="subscribe" style="width: 300px;">
-                  <input type="text" placeholder="  SUBSCRIBE TO OUR NEWSLETTER">
+                  <input id="email" name="email" type="text" placeholder="SUBSCRIBE TO OUR NEWSLETTER">
               </div>
               <div class="submit">
                 <div class="mailicon">
-                  <input type="image" src="icons/emailIcon.png"
+                  <input id="submit-button" type="image" src="icons/emailIcon.png"
                   style="width:25px;height:15px;">
                 </div>
               </div>
           </div>
         </form>
+
         <div class="social media" id="social-media">
           <div class="facebook">
             <a href="https://www.facebook.com/ssaucsd/">
-            <img src="icons/facebook.png" alt="Check out our Facebook!" width="30"
-            height="30"></a>
+            <img src="icons/facebook.png" alt="Check out our Facebook!" width="30" height="30"></a>
           </div>
           <div class="youtube">
             <a href="#">
-              <img src="icons/youtube.png" alt="Check out our YouTube channel!" width="30"
-              height="30">
+              <img src="icons/youtube.png" alt="Check out our YouTube channel!" width="30" height="30">
             </a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- script.js -->
+    <script src="script.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
