@@ -76,9 +76,13 @@ a {
   display: inline-block;
   height: 500px;
 
-  padding-top: 5%;
+  padding-top: 4%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+#info p {
+  font-size: 0.85em;
 }
 
 #subtitle {
