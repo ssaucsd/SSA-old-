@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/AvenirLTStd-Book.otf);
+}
+
 #nav-list ul { 
   margin: 0px auto 0; 
   padding: 0; 
@@ -54,8 +59,8 @@ a {
 	width: 100%;
   margin-top: 85px;
   height: 500px;
-	background-image: url("../image/support.jpg");
-	background-position: center;
+	background-image: url(../images/support.jpg);
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
   display: inline-block;
@@ -91,12 +96,15 @@ a {
 }
 
 #summary {
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 50px;
+  font-size: 23px;
+  margin-top: 20px;
+  font-family: Avenir;
 }
 
 #contribute {
   padding-left: 70px;
+  margin-top: 50px;
 }
 
 #howto {
@@ -107,11 +115,76 @@ a {
 }
 
 #checks {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 23px;
+  line-height: 50px;
+  font-family: Avenir;
 }
 
 #mail {
-  font-size: 20px;
-  line-height: 30px;
+  margin-top: 25px;
+  font-size: 23px;
+  line-height: 40px;
+  font-family: Avenir;
+}
+
+@media screen and (max-width: 575px){
+  #summary {
+    font-size: 35px;
+  }
+
+  #nav-list{
+    display: none !important;
+  }
+
+  #navbarTogglerDemo03{
+    width: 100%;
+    height: 100vh;
+    background: white;
+  }
+
+  #navbar{
+    padding:0;
+  }
+
+  #phone-list{
+    visibility: visible;
+    display: default;
+    padding: 0;
+    margin-top: 40%;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    color: black;
+    height: auto;
+  }
+
+  #phone-list li{
+    width: 100%;
+  }
+
+  #underline-div{
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:0;
+    height: 1px;
+    opacity: 0.7;
+  }
+
+  #menu-button{
+    padding-top: 10px;
+  }
+
+  #title-area{
+    padding-top: 50px;
+  }
+
+  #summary {
+    line-height: 50px;
+    font-size: 33px;
+    margin-top: 20px;
+    font-family: Avenir;
+  }
 }
