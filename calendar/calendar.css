@@ -62,7 +62,7 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
-	background-image: url(images/left-arrow.png);
+	background-image: url(../images/left-arrow.png);
 }
 
 .navForward {
@@ -73,7 +73,7 @@ body {
 	transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
 	-webkit-transform: translate(0%, -50%);
-	background-image: url(images/right-arrow.png);
+	background-image: url(../images/right-arrow.png);
 }
 
 .date-top {
