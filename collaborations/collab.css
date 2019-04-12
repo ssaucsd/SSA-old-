@@ -71,9 +71,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
-  -webkit-filter: opacity(.75);
-  filter: opacity(.75);
 
   margin-left: 45%;
   height: 520px;
