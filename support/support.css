@@ -114,14 +114,8 @@ a {
   font-family: 'Archivo Black', sans-serif
 }
 
-#checks {
-  font-size: 23px;
-  line-height: 50px;
-  font-family: Avenir;
-}
-
-#mail {
-  margin-top: 25px;
+.payment {
+  /*margin-top: 25px;*/
   font-size: 23px;
   line-height: 40px;
   font-family: Avenir;
