@@ -118,7 +118,7 @@
 
 .background-img{
   position: absolute;
-  background-image: url('../images/calendar.jpg');
+  background-image: url('../images/calendar.JPG');
   -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
   filter: grayscale(100%) brightness(60%) contrast(140%);
   background-size: cover;
@@ -181,7 +181,7 @@
 #calendar{
   width: 100%;
   height: 450px;
-
+  margin-top: 70px;
   grid-area: footer;
 }
 
