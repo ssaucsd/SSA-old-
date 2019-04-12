@@ -31,7 +31,7 @@ $optParams = array(
   'maxResults' => MAX_UPCOMING_EVENTS,
   'orderBy' => 'startTime',
   'singleEvents' => true,
-  //'timeMin' => date('c'),
+  'timeMin' => date('c'),
 );
 
 $results = $service->events->listEvents(CALENDAR_ID, $optParams);
