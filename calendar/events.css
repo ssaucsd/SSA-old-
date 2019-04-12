@@ -118,7 +118,7 @@
 
 .background-img{
   position: absolute;
-  background-image: url('./images/support.jpg');
+  background-image: url('../images/calendar.jpg');
   -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
   filter: grayscale(100%) brightness(60%) contrast(140%);
   background-size: cover;
