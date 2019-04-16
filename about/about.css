@@ -48,6 +48,15 @@ a {
   text-decoration: none;
 }
 
+#phone-list{
+  display: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(174,17,17, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
 #title {
   color: #9e0039;
   font-size: 100px;
@@ -63,7 +72,7 @@ a {
   width: 50%;
   display: inline-block;
   float: left;
-  height: 400px;
+  height: 500px;
   text-align: center;
 }
 
@@ -129,15 +138,22 @@ a {
 
 #top-content{
   padding-top: 110px;
+  height: 100vh;
 }
 
-#bottom-content{
-  position: absolute;
-  z-index: -1;
+#top-part{
   width: 100%;
-  height: 25%;
-  top: 75%;
+  margin: 0;
+  height: 800px;
+}
+
+#bottom-bar{
+  width: 100%;
+  z-index: -1;
+  height: 200px;
   background-color: #9e0039;
+  position: absolute;
+  top: 600px;
 }
 
 #content{
@@ -357,3 +373,64 @@ a {
   }
 }
 
+@media screen and (max-width: 575px){
+  /*Here are the css for the collapsible navbar*/
+  /*Here are the css for the collapsible navbar*/
+  #nav-list{
+    display: none !important;
+  }
+
+
+  #navbarTogglerDemo03{
+    width: 100%;
+    height: 100vh;
+    background: white;
+  }
+
+  #navbar{
+    padding:0;
+  }
+
+  #phone-list{
+    visibility: visible;
+    position: absolute;
+    padding: 0;
+    transform: translateY(-50%);
+    top: 50%;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: block;
+    color: black;
+    height: auto;
+    width: 100%;
+  }
+
+  #phone-list li{
+    width: 100%;
+  }
+
+  #underline-div{
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:0;
+    height: 1px;
+    opacity: 0.7;
+  }
+
+  #menu-button{
+    padding-top: 10px;
+  }
+
+  #title-area{
+    padding-top: 50px;
+  }
+
+  #mobile-nav{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0;
+  }
+}

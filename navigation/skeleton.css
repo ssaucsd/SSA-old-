@@ -1,4 +1,3 @@
-/* css for the navbar */
 #nav-list ul { 
     margin: 0px auto 0; 
     padding: 0; 
@@ -69,6 +68,7 @@
   #navbarTogglerDemo03{
     width: 100%;
     height: 100vh;
+    background: black;
   }
 
   #navbar{
@@ -86,7 +86,7 @@
     text-transform: uppercase;
     font-size: 30px;
     display: block;
-    color: white;
+    color: black;
     height: auto;
     width: 100%;
   }
@@ -96,7 +96,7 @@
   }
 
   #underline-div{
-    background-color: black;
+    background-color: white;
     margin-top: 5px;
     margin-bottom: 5px;
     padding:0;
@@ -117,89 +117,4 @@
     font-size: 30px;
     padding: 0;
   }
-}
-
-.main{
-    width: 100%;
-    height: 100vh;
-}
-
-.background-img{
-  position: absolute;
-  background-image: url('../images/calendar.jpg');
-  -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
-  filter: grayscale(100%) brightness(60%) contrast(140%);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.left{
-    width: 45%;
-    display: inline-block;
-    padding-left: 5%;
-}
-
-.right{
-    width: 54%;
-    display: inline-block;
-}
-
-.content-center{
-    width: 90%;
-    margin-left: 5%;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 10;
-
-    display: grid;
-    grid-template-columns: 1fr 3fr 6fr; /* Three columns, one three times as wide as the others */
-    grid-template-rows: 100%; /* Three rows, two with explicit widths */
-    grid-template-areas: "sidebar main footer";
-    grid-column-gap: 10px;
-}
-
-.title{
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  font-size: 90px;
-  color: white;
-  grid-area: sidebar;
-  text-align: center;
-}
-
-.events{
-  grid-area: main;
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 20% 40% 40%;
-  grid-row-gap: auto;
-  grid-column-gap: 10px;
-
-  color: white;
-
-  margin-top: 70px;
-  width: 355px;
-}
-
-#calendar{
-  width: 100%;
-  height: 450px;
-  margin-top: 70px;
-  grid-area: footer;
-}
-
-#month{
-  display: inline-block;
-  font-size: 40px;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-
-.event-display{
-
 }

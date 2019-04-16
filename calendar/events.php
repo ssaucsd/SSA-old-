@@ -65,12 +65,12 @@ $events = $results->getItems();
 
 					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./index.html">
+							<a class="nav-link" id="links" href="../index.html">
 							Home
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./about/index.html">
+							<a class="nav-link" id="links" href="../about/index.html">
 							About
 							</a>
 						</li>
@@ -80,27 +80,27 @@ $events = $results->getItems();
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./collaborations/index.html">
+							<a class="nav-link" id="links" href="../collaborations/index.html">
 							Collabs
 							</a>
 						</li>
 						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="./support/index.html">
+							<a class="nav-link" id="links" href="../support/index.html">
 							Support
 							</a>
 						</li>
 					</ul>
 
 					<ul id="phone-list">
-					<li>Home</li>
-					<li id="underline-div"><div></div></li>
-					<li>About</li>
-					<li id="underline-div"><div></div></li>
-					<li>Calendar</li>
-					<li id="underline-div"><div></div></li>
-					<li>Collabs</li>
-					<li id="underline-div"><div></div></li>
-					<li>Support</li>
+					<li><a id="mobile-nav" href="../index.html">Home</a></li>
+						<li id="underline-div"><div></div></li>
+						<li><a id="mobile-nav" href="../about/index.html">About</a></li>
+						<li id="underline-div"><div></div></li>
+						<li><a id="mobile-nav" href="../calendar/events.php">Calendar</a></li>
+						<li id="underline-div"><div></div></li>
+						<li><a id="mobile-nav" href="../collaborations/index.html">Collabs</a></li>
+						<li id="underline-div"><div></div></li>
+						<li><a id="mobile-nav" href="../support/index.html">Support</a></li>
 					</ul>
 				</div>
 			</nav>
