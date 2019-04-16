@@ -232,16 +232,18 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
   #phone-list{
     visibility: visible;
-    display: default;
+    position: absolute;
     padding: 0;
-    margin-top: 40%;
+    transform: translateY(-50%);
+    top: 50%;
     margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
     display: block;
-    color: white;
+    color: black;
     height: auto;
+    width: 100%;
   }
 
   #phone-list li{
@@ -259,6 +261,12 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
   #menu-button{
     padding-top: 20px;
+  }
+
+  #mobile-nav{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0;
   }
 
   #email-input{

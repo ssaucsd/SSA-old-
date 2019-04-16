@@ -351,9 +351,10 @@ a {
 
   #phone-list{
     visibility: visible;
-    display: default;
+    position: absolute;
     padding: 0;
-    margin-top: 40%;
+    transform: translateY(-50%);
+    top: 50%;
     margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
@@ -361,6 +362,7 @@ a {
     display: block;
     color: black;
     height: auto;
+    width: 100%;
   }
 
   #phone-list li{
@@ -382,5 +384,11 @@ a {
 
   #title-area{
     padding-top: 50px;
+  }
+
+  #mobile-nav{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0;
   }
 }
