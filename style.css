@@ -190,7 +190,13 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 }
 
 @media screen and (max-width: 575px) {
-  
+  .transition{
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: cubic-bezier(0, 0.25, 0.25, 1);
+  }
   #title{
     font-size: 25px;
     line-height: 35px;
