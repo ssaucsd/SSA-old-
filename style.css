@@ -120,6 +120,7 @@ form {
 }
 
 .email {
+  text-indent: 12px;
   border: none;
 }
 
