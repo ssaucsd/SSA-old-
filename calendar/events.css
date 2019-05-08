@@ -108,6 +108,15 @@ a {
     width: 100% !important;
     top: 0 !important;
   }
+  .content-center{
+    top: 0 !important;
+  }
+  .title{
+    font-size: 50px !important;
+  }
+  .events{
+    width: 70% !important;
+  }
 }
 
 @media screen and (max-width: 575px){
