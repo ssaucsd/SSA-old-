@@ -116,57 +116,60 @@ $events = $results->getItems();
 		<div class='main'>
 			<div class="background-img"></div>
 			<div class='content-center'>
-					<div class="title">EVENTS |</div>
-					<div class="events">
-						<div style="font-size: 60px; text-align: center; font-weight: 600">
-							09
-							<p id="month">SEP</p>
-						</div>
-						<div style="padding-top: 25px; text-align: right">
-							<div>Annual Fall Concert</div>
-							<div>Music Center 8:30pm</div>
-						</div>
-						<?php
-						if (empty($events)) {
-							echo '<p style="text-align: center;">No upcoming events.</p>';
-						} else {
-							$i = 1;
+					<div class="title-events">
+						<div class="title">EVENTS |</div>
+						<div class="events">
+							<div style="font-size: 60px; text-align: center; font-weight: 600" id="month-num">
+								09
+								<p id="month">SEP</p>
+							</div>
+							<div style="padding-top: 25px; text-align: right">
+								<div>Annual Fall Concert</div>
+								<div>Music Center 8:30pm</div>
+							</div>
+							<?php
+							if (empty($events)) {
+								echo '<p style="text-align: center;">No upcoming events.</p>';
+							} else {
+								$i = 1;
 
-							foreach ($events as $event) {
-								$title = $event->getSummary();
-								$start = $event->start->dateTime;
-								$location = $event->getLocation();
+								foreach ($events as $event) {
+									$title = $event->getSummary();
+									$start = $event->start->dateTime;
+									$location = $event->getLocation();
 
-								if (empty($start)) {
-									$start = $event->start->date;
+									if (empty($start)) {
+										$start = $event->start->date;
+									}
+
+									$startarr = date_parse($start);
+									$month = $startarr["month"];
+									$monthobj = DateTime::createFromFormat("!m", $month);
+									$month = $monthobj->format("F");
+									$day = $startarr["day"];
+									$day = str_pad($day, 2, 0, STR_PAD_LEFT);
+									$hour = $startarr["hour"];
+									$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
+									$minute = $startarr["minute"];
+									$time = strval($hour) . ":" . strval($minute);
+									$time = date('g:i a', strtotime($time));
+
+									echo "<div class=\"event-display\" id=\"event" . $i . "\">
+													<div style=\"display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end\">
+														<div style=\"display: inline-block; font-size: 30px\" class=\"event-month\">" . $month . "</div>
+														<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\" class=\"event-day\">" . $day . "</div>
+													</div>
+													<div>" . $title . "</div>
+													<div>" . $time . " at " . $location . "</div>
+												</div>";
+
+									$i++;
 								}
-
-								$startarr = date_parse($start);
-								$month = $startarr["month"];
-								$monthobj = DateTime::createFromFormat("!m", $month);
-								$month = $monthobj->format("F");
-								$day = $startarr["day"];
-								$day = str_pad($day, 2, 0, STR_PAD_LEFT);
-								$hour = $startarr["hour"];
-								$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
-								$minute = $startarr["minute"];
-								$time = strval($hour) . ":" . strval($minute);
-								$time = date('g:i a', strtotime($time));
-
-								echo "<div class=\"event-display\" id=\"event" . $i . "\">
-												<div style=\"display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end\">
-													<div style=\"display: inline-block; font-size: 30px\">" . $month . "</div>
-													<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\">" . $day . "</div>
-												</div>
-												<div>" . $title . "</div>
-												<div>" . $time . " at " . $location . "</div>
-											</div>";
-
-								$i++;
 							}
-						}
-						?>
+							?>
+						</div>
 					</div>
+					
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
 			</div>
 		</div>
