@@ -53,7 +53,7 @@ a {
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(174,17,17, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
@@ -299,8 +299,16 @@ a {
   font-size: 13px;
 }
 
+#mobile-title{
+  display: none;
+}
+
 @media screen and (max-width: 766px) {
   
+  .member-title{
+    font-size: 180%;
+  }
+
   #left-people{
     width: 100%;
   }
@@ -320,13 +328,16 @@ a {
     padding-top: 100px;
   }
   
+  #main-title{
+    display: none;
+  }
+
   #info {
-    background-color: #9e0039;
-    color: white;
+    color: black;
     width: 100%;
     height: auto;
   
-    padding-top: 5%;
+    padding-top: 200px;
     padding-left: 5%;
     padding-right: 5%;
 
@@ -350,12 +361,14 @@ a {
   #top-content{
     padding-top: 70px;
   }
-}
 
-.members-img{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5%;
+  #name-container{
+    width: 80% !important;
+  }
+
+  .names{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1000px){
@@ -440,5 +453,76 @@ a {
     text-decoration: none;
     font-size: 30px;
     padding: 0;
+  }
+
+  #main-title{
+    display: none;
+  }
+
+  #bottom-bar{
+    height: 140px;
+  }
+
+  .member-title{
+    font-size: 160%;
+  }
+
+  #info{
+    margin-top: -120px;
+  }
+
+  .members-img{
+    margin-top: 100px;
+  }
+
+  #year{
+    font-size: 100%;
+  }
+
+  .names{
+    font-size: 10px;
+  }
+
+  #left-names{
+    padding-left: 0;
+  }
+
+  #header{
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #bottom-bar{
+    top: 300px;
+  }
+
+  .main{
+    padding-top: 0;
+  }
+
+  #content{
+    margin-top: -60px;
+  }
+
+  .overlay p{
+    display: none;
+  }
+
+  .overlay h5{
+    font-size: 10px;
+  }
+
+  #photo-title, #top-time{
+    display: none;
+  }
+
+  #mobile-title{
+    display: block;
+    color: #ae1111;
+    size: 30px;
+    text-align: right;
+    padding-right: 10%;
+    font-weight: 700;
   }
 }
