@@ -94,9 +94,12 @@ a {
   #month{
     font-size: 25px !important;
   }
+  .event-text{
+    padding-top: 0 !important; 
+  }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 575px){
   .content-center{
     flex-direction: column-reverse !important;
     transform: none !important;
@@ -116,6 +119,21 @@ a {
   }
   .events{
     width: 70% !important;
+  }
+  #month-num{
+    font-size: 25px !important;
+  }
+  #month{
+    font-size: 20px !important;
+  }
+  .content-center{
+    margin-bottom: 200px;
+  }
+  .month-row{
+    height: 15% !important;
+  }
+  .title-events{
+    margin-top: -50px !important;
   }
 }
 
