@@ -6,6 +6,10 @@ body {
     filter: none;
 }
 
+.details {
+	color: #575757 !important;
+}
+
 #calendarTabs1, #td-print-image-id, #td-print-text-id, 
 #calendarListButton1, .navSpacer, #dateMenuArrow1, #dpPopup1 {
 	display: none;

@@ -1,13 +1,19 @@
 <?php
-require '../vendor/autoload.php';
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+require_once '../vendor/autoload.php';
 
 define("MAX_UPCOMING_EVENTS", 4);
 define("CALENDAR_ID",
 	"ucsd.edu_43odjj6hkidg977ksrlio92v30@group.calendar.google.com");
 
+date_default_timezone_set('America/Los_Angeles');
+
 function getClient()
 {
-    require 'credentials.php';
+    require_once 'credentials.php';
     
     $client = new Google_Client();
     
