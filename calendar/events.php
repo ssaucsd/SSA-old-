@@ -60,59 +60,58 @@ $events = $results->getItems();
 
     <body>
 		<!-- Navigation -->
-		<div id="navbar">
-			<nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
+    <div id="navbar">
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
 				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
-				<span class="navbar-toggler-icon">
-					<i class="fa fa-navicon"></i>
-				</span>
+					<span class="navbar-toggler-icon">
+							<i class="fa fa-navicon"></i>
+					</span>
 				</button>
 
+			
+				<div class="collapse navbar-collapse transition" id="navbarTogglerDemo03">
+							<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../">
+											Home
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="#">
+											About
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../calendar/">
+											Calendar
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../collaborations/">
+											Collabs
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../support/">
+											Support
+											</a>
+									</li>
+							</ul>
 
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-
-					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../index.html">
-							Home
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../about/index.html">
-							About
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
-							Calendar
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../collaborations/index.html">
-							Collabs
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../support/index.html">
-							Support
-							</a>
-						</li>
-					</ul>
-
-					<ul id="phone-list">
-					<li><a id="mobile-nav" href="../index.html">Home</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../about/index.html">About</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../calendar/events.php">Calendar</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../collaborations/index.html">Collabs</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../support/index.html">Support</a></li>
-					</ul>
-				</div>
+							<ul id="phone-list">
+									<li><a id="mobile-nav" href="../">Home</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../about/">About</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../calendar/">Calendar</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../collaborations/">Collabs</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../support/">Support</a></li>
+							</ul>
+					</div>
 			</nav>
-		</div>
+	</div>
 
 		<div class='main'>
 			<div class="background-img"></div>
