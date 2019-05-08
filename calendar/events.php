@@ -123,7 +123,7 @@ $events = $results->getItems();
 								09
 								<p id="month">SEP</p>
 							</div>
-							<div style="padding-top: 25px; text-align: right">
+							<div style="padding-top: 25px; text-align: right" class="event-text">
 								<div>Annual Fall Concert</div>
 								<div>Music Center 8:30pm</div>
 							</div>
@@ -159,8 +159,8 @@ $events = $results->getItems();
 														<div style=\"display: inline-block; font-size: 30px\" class=\"event-month\">" . $month . "</div>
 														<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\" class=\"event-day\">" . $day . "</div>
 													</div>
-													<div>" . $title . "</div>
-													<div>" . $time . " at " . $location . "</div>
+													<div class=\"event-text\">" . $title . "</div>
+													<div class=\"event-text\">" . $time . " at " . $location . "</div>
 												</div>";
 
 									$i++;
