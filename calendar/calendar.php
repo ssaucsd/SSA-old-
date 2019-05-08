@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 $calendar_id = "ucsd.edu_43odjj6hkidg977ksrlio92v30@group.calendar.google.com";
 $calendar = "https://calendar.google.com/calendar/embed?src=".$calendar_id."&ctz=America%2FLos_Angeles";
 $url = parse_url($calendar);
