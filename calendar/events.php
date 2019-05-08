@@ -61,7 +61,7 @@ $events = $results->getItems();
     <body>
 		<!-- Navigation -->
     <div id="navbar">
-			<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
+			<nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
 				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
 					<span class="navbar-toggler-icon">
 							<i class="fa fa-navicon"></i>
