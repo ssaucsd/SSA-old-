@@ -82,6 +82,32 @@ a {
   .event-text{
     font-size: 13px !important;
   }
+  .event-month{
+    font-size: 20px !important;
+  }
+  .event-day{
+    font-size: 25px !important;
+  }
+  #month-num{
+    font-size: 30px !important;
+  }
+  #month{
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .content-center{
+    flex-direction: column-reverse !important;
+    transform: none !important;
+  }
+  .title-events{
+    width: 100% !important;
+  }
+  #calendar{
+    width: 100% !important;
+    top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 575px){
@@ -159,7 +185,7 @@ a {
 }
 
 .background-img{
-  position: absolute;
+  position: fixed;
   background-image: url('../images/calendar.jpg');
   -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
   filter: grayscale(100%) brightness(60%) contrast(140%);
