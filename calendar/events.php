@@ -60,114 +60,116 @@ $events = $results->getItems();
 
     <body>
 		<!-- Navigation -->
-		<div id="navbar">
+    <div id="navbar">
 			<nav class="navbar fixed-top navbar-expand-sm navbar-light" id="navbar">
 				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
-				<span class="navbar-toggler-icon">
-					<i class="fa fa-navicon"></i>
-				</span>
+					<span class="navbar-toggler-icon">
+							<i class="fa fa-navicon"></i>
+					</span>
 				</button>
 
+			
+				<div class="collapse navbar-collapse transition" id="navbarTogglerDemo03">
+							<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../">
+											Home
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="#">
+											About
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../calendar/">
+											Calendar
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../collaborations/">
+											Collabs
+											</a>
+									</li>
+									<li class="nav-item flex-fill">
+											<a class="nav-link" id="links" href="../support/">
+											Support
+											</a>
+									</li>
+							</ul>
 
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-
-					<ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../index.html">
-							Home
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../about/index.html">
-							About
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="#">
-							Calendar
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../collaborations/index.html">
-							Collabs
-							</a>
-						</li>
-						<li class="nav-item flex-fill">
-							<a class="nav-link" id="links" href="../support/index.html">
-							Support
-							</a>
-						</li>
-					</ul>
-
-					<ul id="phone-list">
-					<li><a id="mobile-nav" href="../index.html">Home</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../about/index.html">About</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../calendar/events.php">Calendar</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../collaborations/index.html">Collabs</a></li>
-						<li id="underline-div"><div></div></li>
-						<li><a id="mobile-nav" href="../support/index.html">Support</a></li>
-					</ul>
-				</div>
+							<ul id="phone-list">
+									<li><a id="mobile-nav" href="../">Home</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../about/">About</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../calendar/">Calendar</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../collaborations/">Collabs</a></li>
+									<li id="underline-div"><div></div></li>
+									<li><a id="mobile-nav" href="../support/">Support</a></li>
+							</ul>
+					</div>
 			</nav>
-		</div>
+	</div>
 
 		<div class='main'>
 			<div class="background-img"></div>
 			<div class='content-center'>
-					<div class="title">EVENTS |</div>
-					<div class="events">
-						<div style="font-size: 60px; text-align: center; font-weight: 600">
-							09
-							<p id="month">SEP</p>
-						</div>
-						<div style="padding-top: 25px; text-align: right">
-							<div>Annual Fall Concert</div>
-							<div>Music Center 8:30pm</div>
-						</div>
-						<?php
-						if (empty($events)) {
-							echo '<p style="text-align: center;">No upcoming events.</p>';
-						} else {
-							$i = 1;
+					<div class="title-events">
+						<div class="title">EVENTS |</div>
+						<div class="events">
+							<div style="font-size: 60px; text-align: center; font-weight: 600" id="month-num">
+								09
+								<p id="month">SEP</p>
+							</div>
+							<div style="padding-top: 25px; text-align: right" class="event-text">
+								<div>Annual Fall Concert</div>
+								<div>Music Center 8:30pm</div>
+							</div>
+							<?php
+							if (empty($events)) {
+								echo '<p style="text-align: center;">No upcoming events.</p>';
+							} else {
+								$i = 1;
 
-							foreach ($events as $event) {
-								$title = $event->getSummary();
-								$start = $event->start->dateTime;
-								$location = $event->getLocation();
+								foreach ($events as $event) {
+									$title = $event->getSummary();
+									$start = $event->start->dateTime;
+									$location = $event->getLocation();
 
-								if (empty($start)) {
-									$start = $event->start->date;
+									if (empty($start)) {
+										$start = $event->start->date;
+									}
+
+									$startarr = date_parse($start);
+									$month = $startarr["month"];
+									$monthobj = DateTime::createFromFormat("!m", $month);
+									$month = $monthobj->format("F");
+									$day = $startarr["day"];
+									$day = str_pad($day, 2, 0, STR_PAD_LEFT);
+									$hour = $startarr["hour"];
+									$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
+									$minute = $startarr["minute"];
+									$time = strval($hour) . ":" . strval($minute);
+									$time = date('g:i a', strtotime($time));
+
+									echo "<div class=\"event-display\" id=\"event" . $i . "\">
+													<div style=\"display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end\">
+														<div style=\"display: inline-block; font-size: 30px\" class=\"event-month\">" . $month . "</div>
+														<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\" class=\"event-day\">" . $day . "</div>
+													</div>
+													<div class=\"event-text\">" . $title . "</div>
+													<div class=\"event-text\">" . $time . " at " . $location . "</div>
+												</div>";
+
+									$i++;
 								}
-
-								$startarr = date_parse($start);
-								$month = $startarr["month"];
-								$monthobj = DateTime::createFromFormat("!m", $month);
-								$month = $monthobj->format("F");
-								$day = $startarr["day"];
-								$day = str_pad($day, 2, 0, STR_PAD_LEFT);
-								$hour = $startarr["hour"];
-								$hour = str_pad($hour, 2, 0, STR_PAD_LEFT);
-								$minute = $startarr["minute"];
-								$time = strval($hour) . ":" . strval($minute);
-								$time = date('g:i a', strtotime($time));
-
-								echo "<div class=\"event-display\" id=\"event" . $i . "\">
-												<div style=\"display: flex; flex-direction: row; justify-content: space-between; align-items: flex-end\">
-													<div style=\"display: inline-block; font-size: 30px\">" . $month . "</div>
-													<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\">" . $day . "</div>
-												</div>
-												<div>" . $title . "</div>
-												<div>" . $time . " at " . $location . "</div>
-											</div>";
-
-								$i++;
 							}
-						}
-						?>
+							?>
+						</div>
 					</div>
+					
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
 			</div>
 		</div>
