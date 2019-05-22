@@ -1,115 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSA: Collaborations</title>
     <link rel="stylesheet"
-	      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-	      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-	      crossorigin="anonymous">
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./collab.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- Navigation -->
     <div id="navbar">
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
-          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
-            <span class="navbar-toggler-icon">
-                <i class="fa fa-navicon"></i>
-            </span>
-          </button>
-  
-        
-          <div class="collapse navbar-collapse transition" id="navbarTogglerDemo03">
-  
-              <ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
-                  <li class="nav-item flex-fill">
-                      <a class="nav-link" id="links" href="../">
-                      Home
-                      </a>
-                  </li>
-                  <li class="nav-item flex-fill">
-                      <a class="nav-link" id="links" href="../about/">
-                      About
-                      </a>
-                  </li>
-                  <li class="nav-item flex-fill">
-                      <a class="nav-link" id="links" href="../calendar/">
-                      Calendar
-                      </a>
-                  </li>
-                  <li class="nav-item flex-fill">
-                      <a class="nav-link" id="links" href="../collaborations/">
-                      Collabs
-                      </a>
-                  </li>
-                  <li class="nav-item flex-fill">
-                      <a class="nav-link" id="links" href="../support/">
-                      Support
-                      </a>
-                  </li>
-              </ul>
-  
-              <ul id="phone-list">
-                <li><a id="mobile-nav" href="../">Home</a></li>
-                <li id="underline-div"><div></div></li>
-                <li><a id="mobile-nav" href="../about/">About</a></li>
-                <li id="underline-div"><div></div></li>
-                <li><a id="mobile-nav" href="../calendar/">Calendar</a></li>
-                <li id="underline-div"><div></div></li>
-                <li><a id="mobile-nav" href="../collaborations/">Collabs</a></li>
-                <li id="underline-div"><div></div></li>
-                <li><a id="mobile-nav" href="../support/">Support</a></li>
-              </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon"></i>
+          </span>
+        </button>
+          
+        <div class="collapse navbar-collapse transition" id="navbarTogglerDemo03">
+          <ul class="navbar-nav container-fluid d-flex flex-row justify-content-center text-center" id="nav-list">
+            <li class="nav-item flex-fill">
+              <a class="nav-link" id="links" href="../">
+              Home
+              </a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" id="links" href="../about/">
+              About
+              </a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" id="links" href="../calendar/">
+              Calendar
+              </a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" id="links" href="../collaborations/">
+              Collabs
+              </a>
+            </li>
+            <li class="nav-item flex-fill">
+              <a class="nav-link" id="links" href="../support/">
+              Support
+              </a>
+            </li>
+          </ul>
+      
+          <ul id="phone-list">
+            <li><a id="mobile-nav" href="../">Home</a></li>
+            <li id="underline-div"><div></div></li>
+            <li><a id="mobile-nav" href="../about/">About</a></li>
+            <li id="underline-div"><div></div></li>
+            <li><a id="mobile-nav" href="../calendar/">Calendar</a></li>
+            <li id="underline-div"><div></div></li>
+            <li><a id="mobile-nav" href="../collaborations/">Collabs</a></li>
+            <li id="underline-div"><div></div></li>
+            <li><a id="mobile-nav" href="../support/">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <!-- Title Area -->
     <div class="main" id="title-area">
-        <div class="left" id="top-title"><div class="big-title"><ins><i>COLLABORATION</i></ins></div></div>
-        <div class="right" id="pic-title">
-            <div id="overlay">
-                <div class="phone-title"><ins><i>COLLABORATION</i></ins></div>
-            </div>
+      <div class="left" id="top-title"><div class="big-title"><ins><i>COLLABORATION</i></ins></div></div>
+      <div class="right" id="pic-title">
+        <div id="overlay">
+          <div class="phone-title"><ins><i>COLLABORATION</i></ins></div>
         </div>
+      </div>
     </div>
 
     <!-- Content -->
     <div class="main" id="first">
-        <div class="left" id="content1">
-            <div class="sub-title">CHAMBER</div>
-            <div class="sub-title">OCHESTRA</div>
-        </div>
-        <div class="right" id="content2">
-          <p>The UCSD Chamber Orchestra is a University Ensemble that is made up of musicians on campus and in the San Diego community. The group presents three concerts every year and performs a diverse range of symphonic repertoire. Past concerts have included music by Emilie Mayer, Jean Sibelius, Ludwig Van Beethoven, Eva-Maria Houben and many others. The Chamber Orchestra is supported by the UCSD music department and performs in the stellar CPMC concert hall. Musicians who are interested in performing with the UCSD Chamber Orchestra should contact conductor Matt Kline - klinebass@gmail.com.</p>
-          <p>The SSA supports the UCSD Chamber Orchestra by: providing snacks during rehearsal breaks; providing social opportunities for orchestra members to interact with each other outside of rehearsal; publicizing the orchestra through digital media, photography, and videography; and holding receptions at the end of every concert.</p>
+      <div class="left" id="content1">
+        <div class="sub-title">CHAMBER</div>
+        <div class="sub-title">OCHESTRA</div>
+      </div>
+      <div class="right" id="content2">
+        <p>The UCSD Chamber Orchestra is a University Ensemble that is made up of musicians on campus and in the San Diego community. The group presents three concerts every year and performs a diverse range of symphonic repertoire. Past concerts have included music by Emilie Mayer, Jean Sibelius, Ludwig Van Beethoven, Eva-Maria Houben and many others. The Chamber Orchestra is supported by the UCSD music department and performs in the stellar CPMC concert hall. Musicians who are interested in performing with the UCSD Chamber Orchestra should contact conductor Matt Kline - klinebass@gmail.com.</p>
+        <p>The SSA supports the UCSD Chamber Orchestra by: providing snacks during rehearsal breaks; providing social opportunities for orchestra members to interact with each other outside of rehearsal; publicizing the orchestra through digital media, photography, and videography; and holding receptions at the end of every concert.</p>
 
-          <!-- Image -->
-          <div class="right" id="image-div">
-              <div id="center-img">
-                  <div id="overlay-center"></div>
-              </div>
+        <!-- Image -->
+        <div class="right" id="image-div">
+          <div id="center-img">
+            <div id="overlay-center"></div>
           </div>
-
         </div>
-        
-        <!-- Caption -->
-        <div class="right" id="content3">
-          <p>Chamber Orchestra - Winter Concert 2019</p>
-        </div>
+      </div>
+          
+      <!-- Caption -->
+      <div class="right" id="content3">
+        <p>Chamber Orchestra - Winter Concert 2019</p>
+      </div>
     </div>
 
     <div class="main" id="second">
-        <div class="left" id="content1">
-            <div class="sub-title">IMEM</div>
-        </div>
-        <div class="right" id="content2">
-            <p>IMEM is a music outreach organization that aims to bring together musicians in the community. IMEM members take part in mentoring young, aspiring musicians to inspire and help develop their musical performance capabilities. IMEM provides volunteering opportunities to teach music at local elementary and middle schools. In the past, IMEM has also provided volunteer performance opportunities at the Ronald McDonald House and Merrill Gardens Senior Living. The SSA helps facilitate these volunteer opportunities by connecting undergraduates.</p>
-        </div>
+      <div class="left" id="content1">
+        <div class="sub-title">IMEM</div>
+      </div>
+      <div class="right" id="content2">
+        <p>IMEM is a music outreach organization that aims to bring together musicians in the community. IMEM members take part in mentoring young, aspiring musicians to inspire and help develop their musical performance capabilities. IMEM provides volunteering opportunities to teach music at local elementary and middle schools. In the past, IMEM has also provided volunteer performance opportunities at the Ronald McDonald House and Merrill Gardens Senior Living. The SSA helps facilitate these volunteer opportunities by connecting undergraduates.</p>
+      </div>
     </div>
 
     <!-- jQuery -->
@@ -129,5 +127,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous">
     </script>
-</body>
+  </body>
 </html>
