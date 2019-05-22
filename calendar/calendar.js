@@ -77,4 +77,3 @@ window.onload = function() {
 };
 
 window.onresize = repeat;
-

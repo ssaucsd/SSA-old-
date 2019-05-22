@@ -133,7 +133,7 @@ $events = $results->getItems();
 									if (empty($start)) {
 										$start = $event->start->date;
 									}
-
+                  
 									$startarr = date_parse($start);
 									$month = $startarr["month"];
 									$monthobj = DateTime::createFromFormat("!m", $month);
@@ -184,4 +184,5 @@ $events = $results->getItems();
 		crossorigin="anonymous">
 		</script>
     </body>
+
 </html>
