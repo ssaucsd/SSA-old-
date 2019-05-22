@@ -77,7 +77,7 @@ $events = $results->getItems();
 											</a>
 									</li>
 									<li class="nav-item flex-fill">
-											<a class="nav-link" id="links" href="#">
+											<a class="nav-link" id="links" href="../abouot">
 											About
 											</a>
 									</li>
