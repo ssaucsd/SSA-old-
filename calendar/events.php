@@ -77,7 +77,7 @@ $events = $results->getItems();
 											</a>
 									</li>
 									<li class="nav-item flex-fill">
-											<a class="nav-link" id="links" href="#">
+											<a class="nav-link" id="links" href="../about">
 											About
 											</a>
 									</li>
@@ -119,14 +119,6 @@ $events = $results->getItems();
 					<div class="title-events">
 						<div class="title">EVENTS |</div>
 						<div class="events">
-							<div style="font-size: 60px; text-align: center; font-weight: 600" id="month-num">
-								09
-								<p id="month">SEP</p>
-							</div>
-							<div style="padding-top: 25px; text-align: right" class="event-text">
-								<div>Annual Fall Concert</div>
-								<div>Music Center 8:30pm</div>
-							</div>
 							<?php
 							if (empty($events)) {
 								echo '<p style="text-align: center;">No upcoming events.</p>';
