@@ -117,7 +117,7 @@ $events = $results->getItems();
 			<div class="background-img"></div>
 			<div class='content-center'>
 					<div class="title-events">
-						<div class="title">EVENTS |</div>
+						<div class="title">EVENTS |  </div>
 						<div class="events">
 							<?php
 							if (empty($events)) {
