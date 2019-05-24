@@ -27,13 +27,19 @@ function eraseMonthName() {
 }
 
 function replaceEventsWithDots() {
+	var grids = document.getElementsByClassName("st-grid");
 	var events = document.getElementsByClassName("te");
 
-	for (var i = 0; i < events.length; i++) {
-		var event = events[i];
+	for (var i = 0; i < grids.length; i++) {
+		var firstEvents = 
+			grids[i].getElementsByTagName("tr")[1].getElementsByClassName("te");
 
-		event.innerHTML = "&#8226;";
-		event.style.display = "block";
+		for (j = 0; j < firstEvents.length; j++) {
+			var event = firstEvents[j];
+
+			event.innerHTML = "&#8226;";
+			event.style.display = "block";
+		}
 	}
 }
 

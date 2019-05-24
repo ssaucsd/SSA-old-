@@ -6,6 +6,7 @@
   width: 100%;
   text-align: center;
 }
+
 #nav-list li { 
   display: table-cell; 
   position: relative; 
@@ -21,6 +22,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
+
 #nav-list a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -33,6 +35,7 @@ a {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 #nav-list a:hover:after { 
   width: 100%; 
   left: 0; 
@@ -55,7 +58,6 @@ a {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 
 #title {
   color: #9e0039;
@@ -189,7 +191,6 @@ a {
   filter: grayscale(100%);
 }
 
-
 #top-info{
   font-size:27px;
   line-height: 35px;
@@ -244,6 +245,7 @@ a {
 .member-container:hover .image {
   opacity: 0.3;
 }
+
 .member-title{
   margin: 0;
   padding: 0;
@@ -322,6 +324,7 @@ a {
   .main{
     width: 95%;
   }
+  
   #header {
     width: 100%;
     text-align: center;
@@ -388,7 +391,7 @@ a {
 }
 
 @media screen and (max-width: 575px){
-  /*Here are the css for the collapsible navbar*/
+  /*Here is the css for the collapsible navbar*/
   .transition{
     -webkit-transition: height 0.01s;
     -moz-transition: height 0.01s;
