@@ -13,6 +13,7 @@
   width: 100%;
   text-align: center;
 }
+
 #nav-list li { 
   display: table-cell; 
   position: relative; 
@@ -28,6 +29,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
+
 #nav-list a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -40,6 +42,7 @@ a {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 #nav-list a:hover:after { 
   width: 100%; 
   left: 0; 
@@ -53,6 +56,10 @@ a {
 #links{
   color: black;
   text-decoration: none;
+}
+
+#top {
+  display: none;
 }
 
 #header {
@@ -138,6 +145,7 @@ a {
     -o-transition: height 0.01s;
     transition: cubic-bezier(0, 0.25, 0.25, 1);
   }
+
   #summary {
     font-size: 35px;
   }
@@ -193,10 +201,68 @@ a {
     padding-top: 50px;
   }
 
+  #header {
+    width: 100%;
+    margin-top: 85px;
+    height: 250px;
+    background-image: url(../images/support.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+  }
+
+  #title {
+    color: white;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    padding-right: 70px;
+    line-height: 1em;
+    margin-top: 175px;
+  }
+
+  #subtitle {
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'Archivo Black', sans-serif
+    position: absolute;
+    padding-right: 110px;
+    line-height: 0em;
+  }
+
+  #intro {
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  
   #summary {
-    line-height: 50px;
-    font-size: 33px;
-    margin-top: 20px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-top: 15px;
+    font-family: Avenir;
+  }
+
+  #contribute {
+    padding-left: 35px;
+    margin-top: 30px;
+  }
+
+  #howto {
+    color: #9e0039;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Archivo Black', sans-serif
+  }
+
+  .payment {
+    font-size: 13px;
+    line-height: 30px;
     font-family: Avenir;
   }
 
@@ -207,6 +273,36 @@ a {
   }
 
   #header{
-    margin-top: 40px;
+    margin-top: 0px;
+  }
+
+  #title {
+    display: none;
+  }
+
+  #subtitle {
+    display: none;
+  }
+
+  #top {
+    display: inline;
+  }
+
+  #top1 {
+    font-weight: bolder;
+    font-size: 45px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #9e0039;
+    line-height: 0.5em;
+    margin-top: 70px;
+    padding-left: 20px;
+  }
+
+  #top2 {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Archivo Black', sans-serif
+    line-height: 0em;
+    padding-left: 20px;
   }
 }

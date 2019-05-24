@@ -3,7 +3,15 @@ body {
 	background: none !important;
 	border: 0;
 	-webkit-filter: none;
+<<<<<<< HEAD:calendar/calendar.css
     filter: none;
+=======
+  filter: none;
+}
+
+.details {
+	color: #575757 !important;
+>>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b:calendar/calendar.css
 }
 
 #calendarTabs1, #td-print-image-id, #td-print-text-id, 
@@ -89,7 +97,7 @@ body {
 }
 
 .mv-dayname {
-	font-size: 200%;
+	font-size: 150%;
 	text-transform: uppercase;
 }
 
@@ -98,7 +106,6 @@ body {
 	color: white !important;
 	border: none !important;
 	text-align: center !important;
-	font-size: 122%;
 }
 
 .te {

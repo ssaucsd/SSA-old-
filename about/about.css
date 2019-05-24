@@ -6,6 +6,7 @@
   width: 100%;
   text-align: center;
 }
+
 #nav-list li { 
   display: table-cell; 
   position: relative; 
@@ -21,6 +22,7 @@ a {
   padding: 15px 20px;
   position: relative;
 }
+
 #nav-list a:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -33,6 +35,7 @@ a {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
+
 #nav-list a:hover:after { 
   width: 100%; 
   left: 0; 
@@ -53,10 +56,16 @@ a {
 }
 
 .custom-toggler .navbar-toggler-icon {
+<<<<<<< HEAD
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(174,17,17, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
+=======
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+>>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
 #title {
   color: #9e0039;
   font-size: 100px;
@@ -189,7 +198,6 @@ a {
   filter: grayscale(100%);
 }
 
-
 #top-info{
   font-size:27px;
   line-height: 35px;
@@ -244,6 +252,7 @@ a {
 .member-container:hover .image {
   opacity: 0.3;
 }
+
 .member-title{
   margin: 0;
   padding: 0;
@@ -299,8 +308,21 @@ a {
   font-size: 13px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 766px) {
   
+=======
+#mobile-title{
+  display: none;
+}
+
+@media screen and (max-width: 766px) {
+  
+  .member-title{
+    font-size: 180%;
+  }
+
+>>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
   #left-people{
     width: 100%;
   }
@@ -314,19 +336,23 @@ a {
   .main{
     width: 95%;
   }
+  
   #header {
     width: 100%;
     text-align: center;
     padding-top: 100px;
   }
   
+  #main-title{
+    display: none;
+  }
+
   #info {
-    background-color: #9e0039;
-    color: white;
+    color: black;
     width: 100%;
     height: auto;
   
-    padding-top: 5%;
+    padding-top: 200px;
     padding-left: 5%;
     padding-right: 5%;
 
@@ -350,12 +376,14 @@ a {
   #top-content{
     padding-top: 70px;
   }
-}
 
-.members-img{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5%;
+  #name-container{
+    width: 80% !important;
+  }
+
+  .names{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1000px){
@@ -375,7 +403,11 @@ a {
 }
 
 @media screen and (max-width: 575px){
+<<<<<<< HEAD
   /*Here are the css for the collapsible navbar*/
+=======
+  /*Here is the css for the collapsible navbar*/
+>>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
   .transition{
     -webkit-transition: height 0.01s;
     -moz-transition: height 0.01s;
@@ -441,4 +473,80 @@ a {
     font-size: 30px;
     padding: 0;
   }
+<<<<<<< HEAD
+=======
+
+  /* end of navbar*/
+
+  #main-title{
+    display: none;
+  }
+
+  #bottom-bar{
+    height: 140px;
+  }
+
+  .member-title{
+    font-size: 160%;
+  }
+
+  #info{
+    margin-top: -120px;
+  }
+
+  .members-img{
+    margin-top: 100px;
+  }
+
+  #year{
+    font-size: 100%;
+  }
+
+  .names{
+    font-size: 10px;
+  }
+
+  #left-names{
+    padding-left: 0;
+  }
+
+  #header{
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #bottom-bar{
+    top: 300px;
+  }
+
+  .main{
+    padding-top: 0;
+  }
+
+  #content{
+    margin-top: -60px;
+  }
+
+  .overlay p{
+    display: none;
+  }
+
+  .overlay h5{
+    font-size: 10px;
+  }
+
+  #photo-title, #top-time{
+    display: none;
+  }
+
+  #mobile-title{
+    display: block;
+    color: #ae1111;
+    size: 30px;
+    text-align: right;
+    padding-right: 10%;
+    font-weight: 700;
+  }
+>>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
 }
