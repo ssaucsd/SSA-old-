@@ -56,16 +56,9 @@ a {
 }
 
 .custom-toggler .navbar-toggler-icon {
-<<<<<<< HEAD
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(174,17,17, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-
-=======
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
->>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
 #title {
   color: #9e0039;
   font-size: 100px;
@@ -308,10 +301,6 @@ a {
   font-size: 13px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 766px) {
-  
-=======
 #mobile-title{
   display: none;
 }
@@ -322,7 +311,6 @@ a {
     font-size: 180%;
   }
 
->>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
   #left-people{
     width: 100%;
   }
@@ -403,11 +391,7 @@ a {
 }
 
 @media screen and (max-width: 575px){
-<<<<<<< HEAD
-  /*Here are the css for the collapsible navbar*/
-=======
   /*Here is the css for the collapsible navbar*/
->>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
   .transition{
     -webkit-transition: height 0.01s;
     -moz-transition: height 0.01s;
@@ -473,8 +457,6 @@ a {
     font-size: 30px;
     padding: 0;
   }
-<<<<<<< HEAD
-=======
 
   /* end of navbar*/
 
@@ -548,5 +530,4 @@ a {
     padding-right: 10%;
     font-weight: 700;
   }
->>>>>>> 6865c0a528a499d9d44031adc203ba56c1a6241b
 }
