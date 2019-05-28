@@ -9,6 +9,7 @@ define("MAX_UPCOMING_EVENTS", 4);
 define("CALENDAR_ID",
 	"ucsd.edu_43odjj6hkidg977ksrlio92v30@group.calendar.google.com");
 
+
 date_default_timezone_set('America/Los_Angeles');
 
 function getClient()
@@ -112,7 +113,6 @@ $events = $results->getItems();
 					</div>
 			</nav>
 	</div>
-
 		<div class='main'>
 			<div class="background-img"></div>
 			<div class='content-center'>
@@ -161,7 +161,6 @@ $events = $results->getItems();
 							?>
 						</div>
 					</div>
-					
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
 			</div>
 		</div>
@@ -184,5 +183,4 @@ $events = $results->getItems();
 		crossorigin="anonymous">
 		</script>
     </body>
-
 </html>
