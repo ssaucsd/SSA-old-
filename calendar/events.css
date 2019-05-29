@@ -1,53 +1,53 @@
 /* css for the navbar */
-#nav-list ul { 
-    margin: 0px auto 0; 
-    padding: 0; 
-    list-style: none; 
-    display: table;
-    width: 100%;
-    text-align: center;
-  }
-  #nav-list li { 
-    display: table-cell; 
-    position: relative; 
-    padding: 15px 0;
-  }
-  a {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
-  #nav-list a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  #nav-list a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+#nav-list ul {
+  margin: 0px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+#nav-list li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
   
-  #nav-list a { 
-    color: white; 
-    text-decoration: none;
-  } 
-  
-  #links{
-    color: white;
-    text-decoration: none;
-  }
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+#nav-list a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#nav-list a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#nav-list a { 
+  color: white; 
+  text-decoration: none;
+} 
+
+#links{
+  color: white;
+  text-decoration: none;
+}
 
 #phone-list{
   display: none;
@@ -57,7 +57,87 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+@media screen and (max-width: 1090px){
+	.title{
+    font-size: 70px !important;
+    padding-bottom: 70px !important;
+  }
+  #month-num{
+    font-size: 35px !important;
+  }
+  #month{
+    font-size: 30px !important;
+  }
+  .event-month{
+    font-size: 25px !important;
+  }
+  .event-day{
+    font-size: 30px !important;
+  }
+  .event-text{
+    font-size: 15px !important;
+  }
+}
 
+@media screen and (max-width: 880px){
+  .event-text{
+    font-size: 13px !important;
+  }
+  .event-month{
+    font-size: 20px !important;
+  }
+  .event-day{
+    font-size: 25px !important;
+  }
+  #month-num{
+    font-size: 30px !important;
+  }
+  #month{
+    font-size: 25px !important;
+  }
+  .event-text{
+    padding-top: 0 !important; 
+  }
+}
+
+@media screen and (max-width: 575px){
+  .content-center{
+    flex-direction: column-reverse !important;
+    transform: none !important;
+  }
+  .title-events{
+    width: 100% !important;
+  }
+  #calendar{
+    width: 100% !important;
+    top: 0 !important;
+  }
+  .content-center{
+    top: 0 !important;
+  }
+  .title{
+    font-size: 50px !important;
+    padding-bottom: 140px !important;
+  }
+  .events{
+    width: 70% !important;
+  }
+  #month-num{
+    font-size: 25px !important;
+  }
+  #month{
+    font-size: 20px !important;
+  }
+  .content-center{
+    margin-bottom: 100px;
+  }
+  .month-row{
+    height: 15% !important;
+  }
+  .title-events{
+    margin-top: -50px !important;
+  }
+}
 
 @media screen and (max-width: 575px){
   /*Here are the css for the collapsible navbar*/
@@ -147,19 +227,21 @@
 }
 
 .content-center{
-    width: 90%;
-    margin-left: 5%;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 10;
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-    display: grid;
-    grid-template-columns: 1fr 3fr 6fr; /* Three columns, one three times as wide as the others */
-    grid-template-rows: 100%; /* Three rows, two with explicit widths */
-    grid-template-areas: "sidebar main footer";
-    grid-column-gap: 10px;
+.title-center{
+  display: flex;
 }
 
 .title{
@@ -167,30 +249,36 @@
   transform: rotate(180deg);
   font-size: 90px;
   color: white;
-  grid-area: sidebar;
   text-align: center;
+  display: inline-block;
+  padding-bottom: 130px;
+}
+
+.title-events{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#calendar{
+  width: 55%;
+  height: 450px;
+  margin-top: 70px;
+  display: inline-block
 }
 
 .events{
-  grid-area: main;
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 20% 40% 40%;
-  grid-row-gap: auto;
+  grid-auto-rows: 50% 50%;
+  grid-row-gap: 20px;
   grid-column-gap: 10px;
 
   color: white;
 
-  margin-top: 70px;
-  width: 355px;
-}
-
-#calendar{
-  width: 100%;
-  height: 450px;
-  margin-top: 70px;
-  grid-area: footer;
+  margin-top: 150px;
+  width: 320px;
 }
 
 #month{

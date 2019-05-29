@@ -78,7 +78,7 @@ $events = $results->getItems();
 											</a>
 									</li>
 									<li class="nav-item flex-fill">
-											<a class="nav-link" id="links" href="../about">
+											<a class="nav-link" id="links" href="../abouot">
 											About
 											</a>
 									</li>
@@ -117,7 +117,7 @@ $events = $results->getItems();
 			<div class="background-img"></div>
 			<div class='content-center'>
 					<div class="title-events">
-						<div class="title">EVENTS |</div>
+						<div class="title">EVENTS |  </div>
 						<div class="events">
 							<?php
 							if (empty($events)) {
@@ -133,7 +133,7 @@ $events = $results->getItems();
 									if (empty($start)) {
 										$start = $event->start->date;
 									}
-                  
+
 									$startarr = date_parse($start);
 									$month = $startarr["month"];
 									$monthobj = DateTime::createFromFormat("!m", $month);
