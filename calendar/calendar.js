@@ -31,14 +31,21 @@ function replaceEventsWithDots() {
 	var events = document.getElementsByClassName("te");
 
 	for (var i = 0; i < grids.length; i++) {
+		var dates = 
+			grids[i].getElementsByTagName("tr")[0].getElementsByTagName("td");
 		var firstEvents = 
-			grids[i].getElementsByTagName("tr")[1].getElementsByClassName("te");
+			grids[i].getElementsByTagName("tr")[1].getElementsByTagName("td");
 
 		for (j = 0; j < firstEvents.length; j++) {
-			var event = firstEvents[j];
+			var event = firstEvents[j].getElementsByClassName("te");
 
-			event.innerHTML = "&#8226;";
-			event.style.display = "block";
+			if (event.length > 0) {
+				event[0].innerHTML = "&#8226;";
+
+				if (!dates[j].classList.contains("st-dtitle-nonmonth")) {
+					event[0].style.display = "block";
+				}
+			}
 		}
 	}
 }
