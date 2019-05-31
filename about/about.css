@@ -84,6 +84,10 @@ a {
   font-size: 60px;
 }
 
+#main-paragraph, #main-title {
+  font-family: 'Roboto', sans-serif;
+}
+
 #info {
   text-align: center;
   line-height: 90%;
