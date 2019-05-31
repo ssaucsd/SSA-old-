@@ -55,6 +55,8 @@ $events = $results->getItems();
 			crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="./events.css">
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</head>
 
