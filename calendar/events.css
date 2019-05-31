@@ -144,22 +144,14 @@ a {
 
 @media screen and (max-width: 575px){
   /*Here are the css for the collapsible navbar*/
-  .transition{
-    -webkit-transition: height 0.01s;
-    -moz-transition: height 0.01s;
-    -ms-transition: height 0.01s;
-    -o-transition: height 0.01s;
-    transition: cubic-bezier(0, 0.25, 0.25, 1);
-  }
-
   #nav-list{
     display: none !important;
   }
 
+
   #navbarTogglerDemo03{
     width: 100%;
     height: 100vh;
-    background: black;
   }
 
   #navbar{
@@ -187,7 +179,7 @@ a {
   }
 
   #underline-div{
-    background-color: white;
+    background-color: black;
     margin-top: 5px;
     margin-bottom: 5px;
     padding:0;
@@ -211,12 +203,12 @@ a {
 }
 
 .main{
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .background-img{
-  position: fixed;
+  position: absolute;
   background-image: url('../images/calendar.jpg');
   -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
   filter: grayscale(100%) brightness(60%) contrast(140%);
@@ -227,14 +219,14 @@ a {
 }
 
 .left{
-  width: 45%;
-  display: inline-block;
-  padding-left: 5%;
+    width: 45%;
+    display: inline-block;
+    padding-left: 5%;
 }
 
 .right{
-  width: 54%;
-  display: inline-block;
+    width: 54%;
+    display: inline-block;
 }
 
 .content-center{

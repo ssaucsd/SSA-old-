@@ -9,6 +9,7 @@ define("MAX_UPCOMING_EVENTS", 4);
 define("CALENDAR_ID",
 	"ucsd.edu_43odjj6hkidg977ksrlio92v30@group.calendar.google.com");
 
+
 date_default_timezone_set('America/Los_Angeles');
 
 function getClient()
@@ -79,7 +80,7 @@ $events = $results->getItems();
 											</a>
 									</li>
 									<li class="nav-item flex-fill">
-											<a class="nav-link" id="links" href="../about">
+											<a class="nav-link" id="links" href="../abouot">
 											About
 											</a>
 									</li>
@@ -114,12 +115,11 @@ $events = $results->getItems();
 					</div>
 			</nav>
 	</div>
-
 		<div class='main'>
 			<div class="background-img"></div>
 			<div class='content-center'>
 					<div class="title-events">
-						<div class="title">EVENTS |</div>
+						<div class="title">EVENTS |  </div>
 						<div class="events">
 							<?php
 							if (empty($events)) {
@@ -135,7 +135,7 @@ $events = $results->getItems();
 									if (empty($start)) {
 										$start = $event->start->date;
 									}
-                  
+
 									$startarr = date_parse($start);
 									$month = $startarr["month"];
 									$monthobj = DateTime::createFromFormat("!m", $month);
@@ -154,8 +154,12 @@ $events = $results->getItems();
 														<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\" class=\"event-day\">" . $day . "</div>
 													</div>
 													<div class=\"event-text\">" . $title . "</div>
-													<div class=\"event-text\">" . $time . " at " . $location . "</div>
-												</div>";
+													<div class=\"event-text\">" . $time;
+									if ($location != '') {
+										echo " at " . $location;
+									}
+									
+									echo "</div></div>";
 
 									$i++;
 								}
@@ -163,7 +167,6 @@ $events = $results->getItems();
 							?>
 						</div>
 					</div>
-					
 					<iframe id="calendar" src="./calendar.php" frameBorder="0"></iframe>
 			</div>
 		</div>
@@ -186,5 +189,4 @@ $events = $results->getItems();
 		crossorigin="anonymous">
 		</script>
     </body>
-
 </html>
