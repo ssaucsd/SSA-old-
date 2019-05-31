@@ -208,7 +208,7 @@ a {
 }
 
 .background-img{
-  position: absolute;
+  position: fixed;
   background-image: url('../images/calendar.jpg');
   -webkit-filter: grayscale(100%) brightness(60%) contrast(140%);
   filter: grayscale(100%) brightness(60%) contrast(140%);
