@@ -152,8 +152,12 @@ $events = $results->getItems();
 														<div style=\"display: inline-block; margin-right: 0; font-size: 40px; font-weight: 600\" class=\"event-day\">" . $day . "</div>
 													</div>
 													<div class=\"event-text\">" . $title . "</div>
-													<div class=\"event-text\">" . $time . " at " . $location . "</div>
-												</div>";
+													<div class=\"event-text\">" . $time;
+									if ($location != '') {
+										echo " at " . $location;
+									}
+									
+									echo "</div></div>";
 
 									$i++;
 								}
