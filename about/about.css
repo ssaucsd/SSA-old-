@@ -150,7 +150,7 @@ a {
 #top-part{
   width: 100%;
   margin: 0;
-  height: 800px;
+  height: 900px;
 }
 
 #bottom-bar{
@@ -159,7 +159,7 @@ a {
   height: 200px;
   background-color: #9e0039;
   position: absolute;
-  top: 600px;
+  top: 700px;
 }
 
 #content{
