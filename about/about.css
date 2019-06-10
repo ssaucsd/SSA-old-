@@ -382,6 +382,14 @@ a {
 	#info{
     font-size: 20px;
   }
+
+  #main-title{
+    font-size: 35px;
+  }
+
+  #bottom-bar{
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 766px){
@@ -391,6 +399,14 @@ a {
 
   #title{
     font-size: 80px;
+  }
+
+  #main-title{
+    font-size: 35px;
+  }
+
+  #bottom-bar{
+    margin-top: 20px;
   }
 }
 
