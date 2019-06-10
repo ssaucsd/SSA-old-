@@ -108,7 +108,14 @@ a {
   padding-right: 50px;
 }
 
-#content2{
+#content2 {
+  text-align: left;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+#content2long{
   text-align: left;
   padding-top: 50px;
   padding-right: 50px;
@@ -116,6 +123,10 @@ a {
 }
 
 #content2 p{
+  font-size: 20px;
+}
+
+#content2long p{
   font-size: 20px;
 }
 
@@ -272,6 +283,13 @@ a {
     padding-left: 25px;
   }
 
+  #content2long {
+    text-align: left;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
   .phone-title{
     position: relative;
     color:#ae1111;
@@ -360,6 +378,16 @@ a {
   #content2 {
     text-align: left;
     padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 10px;
+    width: 100%;
+    z-index: 0;
+    margin-top: 50px;
+  }
+
+  #content2long{
+    text-align: left;
+    padding-top: 50px;
     padding-right: 15px;
     padding-left: 10px;
     width: 100%;
