@@ -140,6 +140,26 @@ a {
   padding-bottom: 99999px;
 }
 
+#third{
+  overflow: hidden;
+}
+
+#third #content1{
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+#fourth{
+  overflow: hidden;
+}
+
+#fourth #content1{
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
 /* This is the code for fill a child in a parent vertically */
 
 .sub-title{
@@ -156,10 +176,37 @@ a {
   max-width: 640px;
 }
 
-#center-img{
+#first #center-img{
   width: 100%;
   height: 400px;
   background-image: url("../images/collaboration_chamber.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#second #center-img{
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/all_music_showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#third #center-img{
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/la_jolla_symphony_chorus.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#fourth #center-img{
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/collaboration_imem.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
