@@ -24,4 +24,4 @@ The credentials.php file should have the following format:
 $credentials = 'API_CREDENTIALS';
 ?>`
 
-`API_CREDENTIALS` should be replaces with the text in the JSON file created when generating the Google Calendar API key. Steps on how to generate the JSON file with Google Calendar API credentials can be found in step 1 of the [PHP Google API Quickstart page](https://developers.google.com/calendar/quickstart/php).
+`API_CREDENTIALS` should be replaced with the text froom the JSON file containing the API credentials (created when generating the Google Calendar API key). Steps on how to generate the JSON file with Google Calendar API credentials can be found in step 1 of the [PHP Google API Quickstart page](https://developers.google.com/calendar/quickstart/php).
